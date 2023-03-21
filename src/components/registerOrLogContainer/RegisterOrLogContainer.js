@@ -3,7 +3,7 @@ import "./RegisterOrLogContainer.css";
 
 import Login from "../login/Login"
 // import Register
-// import Logout
+import LogOut from "../logout/Logout";
 
 const RegisterOrLogContainer =({
     user,
