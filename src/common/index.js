@@ -9,7 +9,7 @@ export const writeCookie = (key, value, days = 365) => {
         return cookie;
 };
 
-export const getTokenFromCookie = (cookiename) => {
+export const getTokenFromCookie = (cookieName) => {
     const expression = new RegExp (`?<=${cookieName}=)[^;]*`);
 
     try {
