@@ -1,6 +1,6 @@
 
 import './App.css';
-import {useState, useEffect} from React;
+// import {useState, useEffect} from "react";
 
 function App() {
   return (
