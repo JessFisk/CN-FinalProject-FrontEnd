@@ -6,7 +6,7 @@ import {useState} from 'react'
 const LandingPage = (props) => {
     const [user, setUser] = useState();
     return (
-        <div>
+        <div className="LandingPage-Wrapper">
             <h1> NOM... </h1>
 
             <RegisterOrLogContainer user={user} setUser={setUser}/>
