@@ -9,11 +9,32 @@ import CheckoutPage from "./pages/checkoutPage/CheckoutPage"
 import LandingPage from "./pages/landingPage/LandingPage"
 import ContactPage from "./pages/contactPage/ContactPage"
 import { useState } from "react";
+import { getTokenFromCookie } from "./common";
+import { authCheck } from "./utils/user";
 
 
 
 const App = () => {
   const [basket, setBasket] = useState ([])
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    //might be better in Homepage?
+    if (document.cookie){
+      let token = getTokenFromCookie("jwt_token")
+
+      if (token === "false") {
+        setUser(null);
+      } else {
+        loginWithToken(token)
+      }
+      }
+    }, [] );
+
+    const loginWithToken = async (token) => {
+      const persistentUser = await authCheck(token);
+      await setUser(persistentUser.user)
+    };  
 
   return (
     <>
@@ -30,6 +51,6 @@ const App = () => {
 
 </>
   );
-}
 
+  }
 export default App;
