@@ -10,7 +10,7 @@ export const writeCookie = (key, value, days = 365) => {
 };
 
 export const getTokenFromCookie = (cookieName) => {
-    const expression = new RegExp (`?<=${cookieName}=)[^;]*`);
+    const expression = new RegExp (`(?<=${cookieName}=)[^;]*`);
 
     try {
         const cookie = document.cookie.match(expression)[0];

@@ -14,12 +14,6 @@ import { getTokenFromCookie } from "./common";
 import { authCheck } from "./utils/user";
 
 
-import { useState } from "react";
-
-
-
-
-
 const App = () => {
   const [basket, setBasket] = useState ([])
   const [user, setUser] = useState(null);
