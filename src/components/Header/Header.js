@@ -16,7 +16,7 @@ const Header = (props) => {
                 <img id="logo" className="links" src="./images/WhiteN.png" alt="logo" to="/"/>
                 <Link id="recipes" className="links" to="">Recipes</Link>
                 <Link id="profile" className="links" to="">Profile</Link>
-                <Link id="about" className="links" to="">About</Link>
+                <Link id="about" className="links" to="/about">About</Link>
                 <Link id="contact" className="links" to="/contact">Contact</Link>
                 <Link id="community" className="links" to="">Community</Link>
             </Navbar.Brand>
