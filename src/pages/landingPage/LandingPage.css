@@ -1,0 +1,12 @@
+.LandingPage-wrapper {
+    background-color: #EDF1D6;
+}
+#title{
+    border: 5px red solid;
+}
+#slogan {
+    font: green
+}
+#logo3 {
+    height: 50px;
+}
