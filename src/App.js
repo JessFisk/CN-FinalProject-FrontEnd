@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CheckoutPage from "./pages/checkoutPage/CheckoutPage"
 import LandingPage from "./pages/landingPage/LandingPage"
 import ContactPage from "./pages/contactPage/ContactPage"
-import { useState } from "react";
 import { getTokenFromCookie } from "./common";
 import { authCheck } from "./utils/user";
 
