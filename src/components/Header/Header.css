@@ -12,9 +12,11 @@ body {
     display: flex;
   }
   
-  .logo {
-    width: 90px;
-    margin-left: 280px;
+  .Logo {
+    width: 70px;
+    margin-left: 80px;
+    height: 100px;
+    
   }
   
   .name {
@@ -31,6 +33,7 @@ body {
     padding-right: 80px;
     text-align: center;
     text-decoration: none;
+    height: 110px;
   }
   .routesContainer :hover{
     color: white;
@@ -39,7 +42,8 @@ body {
 
   #cart{
     display:flex;
-    padding-left: 100px;
+    padding-left: 50px;
+    padding-right: 150px;
     
   }
   

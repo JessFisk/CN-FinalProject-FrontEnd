@@ -2,12 +2,25 @@ body {
     background-color: green;
 }
 .LandingPage-Wrapper{
-    background-color: #EDF1D6;
-    justify-content: center;
+    background-color: #9DC08B;
+    justify-content: space-between;
     margin: 25px;
     height: 450px;
-    border: solid 3px blue
+    border: solid 3px blue;
+    
 }
+
+.logowrap {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    height: 150px;
+    border: double green 3px;
+    justify-self: center;
+}
+
 #Title{
     border: 5px red solid;
     color: green;
@@ -19,9 +32,5 @@ body {
     display: flex;
     align-self: center;
 }
-#logo3 {
-    height: 50px;
-    border: double green 3px;
-    justify-self: center;
-}
+
 
