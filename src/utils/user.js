@@ -4,7 +4,7 @@ export const registerUser = async (e, username, password) => {
     console.log(username, password)
     try {
         const response = await fetch(
-            `http://localhost:5001/users/register`,
+            `${process.env.REACT_APP_BACKEND_URL}/users/register`,
             {
                 method: "POST",
                 mode: "cors",
@@ -34,8 +34,7 @@ export const login = async (e, username, password) => {
 
     try {
         const response = await fetch(
-            // https://cn-finalproject-backend.onrender.com
-            `http://localhost:5001/users/loginuser`,
+            `${process.env.REACT_APP_BACKEND_URL}/users/loginuser`,
             {
                 method: "POST",
                 mode: "cors",
