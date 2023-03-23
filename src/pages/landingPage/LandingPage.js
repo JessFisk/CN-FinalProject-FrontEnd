@@ -12,9 +12,10 @@ const LandingPage = (props) => {
             <div className='logowrap'>
               <img id="logo" src={Logo} alt="nom green logo"></img>
             </div>
-            <h1 id='Title'> NOM... </h1>
-            <p> Image carosel/displays go here</p>
             <h3 id='slogan'> Delicous Food for Every Mood</h3>
+            {/* <h1 id='Title'> NOM... </h1> */}
+            <p> Image carosel/displays go here</p>
+            
             
 
             <RegisterOrLogContainer user={user} setUser={setUser}/>

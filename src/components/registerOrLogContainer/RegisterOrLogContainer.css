@@ -1,7 +1,9 @@
 .Sign-Wrapper {
-    background-color: red;
+    background-color: #9DC08B;
     border: 3px solid blue;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    color: #E9EFC0;
+    border: solid 3px #40513B;
 }
 
