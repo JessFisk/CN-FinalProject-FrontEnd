@@ -8,7 +8,7 @@ import {
 import { FaShoppingCart } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import "./Header.css";
-Import 
+import Logo from "../images/WhiteNom.png"
 
 const Header = (props) => {
     return <Navbar id="navbarBackground" variant="dark" style={{ height: 80 }}>

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RegisterOrLogContainer from '../../components/registerOrLogContainer/RegisterOrLogContainer';
 import {useState} from 'react'
-import Logo from "../../images/WhiteNom.png"
+import Logo from "../../components/images/WhiteNom.png";
 
 import "./LandingPage.css";
 
