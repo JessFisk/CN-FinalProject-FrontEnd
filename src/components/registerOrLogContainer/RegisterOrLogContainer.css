@@ -1,5 +1,5 @@
-.RegisterOrLogContainer {
-    background-color: aqua;
+.Sign-Wrapper {
+    background-color: red;
     border: 3px solid blue;
     display:flex;
     justify-content: center;

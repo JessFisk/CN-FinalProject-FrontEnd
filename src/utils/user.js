@@ -4,8 +4,8 @@ export const registerUser = async (e, username, password) => {
     console.log(username, password)
     try {
         const response = await fetch(
-            `${process.env.REACT_APP_BASE_URL}/users/register`,
-                { //don't understand the error here?
+            `http://localhost:5001/users/register`,
+            {
                 method: "POST",
                 mode: "cors",
                 headers: {
@@ -53,6 +53,27 @@ export const login = async (e, username, password) => {
         writeCookie("jwt_token", data.user.token, 14);
 
         e.target.reset();
+        return data;
+    } catch (error) {
+        console.log(error)
+    };
+};
+
+export const authCheck = async (jwt_token) => {
+    try {
+        const response = await fetch(
+            `${process.env.REACT_APP_BASE_URL}/users/authcheck`,
+            {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization :`${jwt_token}`
+                },
+            }
+        );
+
+        const data = await response.json();
         return data;
     } catch (error) {
         console.log(error)

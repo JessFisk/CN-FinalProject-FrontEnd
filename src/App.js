@@ -1,3 +1,6 @@
+import {useState, useEffect} from "react"
+// import { getTokenFromCookie } from "./common";
+// import { authCheck } from "./utils/user";
 
 import './App.css';
 import Header from './components/Header/Header';
@@ -6,16 +9,42 @@ import CheckoutPage from "./pages/checkoutPage/CheckoutPage"
 import LandingPage from "./pages/landingPage/LandingPage"
 import ContactPage from "./pages/contactPage/ContactPage"
 import AboutPage from "./pages/AboutPage/AboutPage"
+
+import { getTokenFromCookie } from "./common";
+import { authCheck } from "./utils/user";
+
+
 import { useState } from "react";
+
 
 
 
 
 const App = () => {
   const [basket, setBasket] = useState ([])
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    //might be better in Homepage?
+    if (document.cookie){
+      let token = getTokenFromCookie("jwt_token")
+
+      if (token === "false") {
+        setUser(null);
+      } else {
+        loginWithToken(token)
+      }
+      }
+    }, [] );
+
+    const loginWithToken = async (token) => {
+      const persistentUser = await authCheck(token);
+      await setUser(persistentUser.user)
+    };  
 
   return (
-    <BrowserRouter>
+    <>
+  <BrowserRouter>
     
     <Header basket={basket} updateBasket={setBasket}> </Header>
   <Routes>
@@ -26,7 +55,9 @@ const App = () => {
   </Routes>
 
 </BrowserRouter>
-  );
-}
 
+</>
+  );
+
+  }
 export default App;
