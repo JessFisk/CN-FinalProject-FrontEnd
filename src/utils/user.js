@@ -4,8 +4,8 @@ export const registerUser = async (e, username, password) => {
     console.log(username, password)
     try {
         const response = await fetch(
-            `${process.env.REACT_APP_BASE_URL}/users/register`,
-                { //don't understand the error here?
+            `http://localhost:5001/users/register`,
+            {
                 method: "POST",
                 mode: "cors",
                 headers: {

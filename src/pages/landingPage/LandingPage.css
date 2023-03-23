@@ -1,12 +1,27 @@
-.LandingPage-wrapper {
-    background-color: #EDF1D6;
+body {
+    background-color: green;
 }
-#title{
+.LandingPage-Wrapper{
+    background-color: #EDF1D6;
+    justify-content: center;
+    margin: 25px;
+    height: 450px;
+    border: solid 3px blue
+}
+#Title{
     border: 5px red solid;
+    color: green;
+    
 }
 #slogan {
-    font: green
+    color: green;
+    border: 5px red solid;
+    display: flex;
+    align-self: center;
 }
 #logo3 {
     height: 50px;
+    border: double green 3px;
+    justify-self: center;
 }
+
