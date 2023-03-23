@@ -5,7 +5,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CheckoutPage from "./pages/checkoutPage/CheckoutPage"
 import LandingPage from "./pages/landingPage/LandingPage"
 import ContactPage from "./pages/contactPage/ContactPage"
+import AboutPage from "./pages/AboutPage/AboutPage"
 import { useState } from "react";
+
 
 
 
@@ -20,6 +22,7 @@ const App = () => {
     <Route path="/" element={<LandingPage/>}></Route>
     <Route path="/checkout" element={<CheckoutPage/>}></Route>
     <Route path="/contact" element={<ContactPage/>}></Route>
+    <Route path="/about" element={<AboutPage/>}></Route>
   </Routes>
 
 </BrowserRouter>
