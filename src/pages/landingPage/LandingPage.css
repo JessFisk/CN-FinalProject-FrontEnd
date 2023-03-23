@@ -21,20 +21,6 @@ body {
     justify-self: center;
 }
 
-#Title{
-    border: 5px #40513B solid;
-    color: green;
-    display:flex;
-    justify-content: center;
-    font-size: 140px;
-    
-}
-#slogan {
-    color: green;
-    border: 5px #40513B solid;
-    display: flex;
-    justify-content: center;
-}
 
 .carousel{
     width: 30%;

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RegisterOrLogContainer from '../../components/registerOrLogContainer/RegisterOrLogContainer';
 import {useState} from 'react'
-import Logo from "../../components/images/WhiteNom.png";
+import Logo from "../../components/images/WhiteNomLogo.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./LandingPage.css";
@@ -18,8 +18,7 @@ const LandingPage = (props) => {
     return (
         <div className="LandingPage-Wrapper">
             <div className='logowrap'>
-              <img id="logo" src={Logo} alt="nom green logo"></img>
-            <h3 id='slogan'> Delicous Food for Every Mood</h3>
+              <img id="logo" src={Logo} alt="nom white logo"></img>
             {/* <h1 id='Title'> NOM... </h1> */}
             <RegisterOrLogContainer user={user} setUser={setUser}/>
             </div>
