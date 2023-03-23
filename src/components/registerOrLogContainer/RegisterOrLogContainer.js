@@ -1,7 +1,7 @@
 import React from "react";
 import "./RegisterOrLogContainer.css";
 
-import Login from "../login/Login"
+import Login from "./login/Login";
 import Register from "./register/Register";
 import LogOut from "./logout/Logout";
 

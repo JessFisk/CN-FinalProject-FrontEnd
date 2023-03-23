@@ -13,7 +13,8 @@ export const getTokenFromCookie = (cookieName) => {
     const expression = new RegExp (`?<=${cookieName}=)[^;]*`);
 
     try {
-        const cookie = document.cookie.match(expression)[0]
+        const cookie = document.cookie.match(expression)[0];
+        return cookie;
     } catch {
         console.log("cookie not found")
         return false;

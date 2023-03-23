@@ -34,7 +34,8 @@ export const login = async (e, username, password) => {
 
     try {
         const response = await fetch(
-            `${process.env.REACT_APP_BASE_URL}/users/login`,
+            // https://cn-finalproject-backend.onrender.com
+            `http://localhost:5001/users/loginuser`,
             {
                 method: "POST",
                 mode: "cors",
@@ -47,8 +48,8 @@ export const login = async (e, username, password) => {
                 }),
             }
         );
-
         const data = await response.json();
+        console.log("login data", data);
         writeCookie("jwt_token", data.user.token, 14);
 
         e.target.reset();
