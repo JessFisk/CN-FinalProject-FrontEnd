@@ -10,6 +10,7 @@ import LandingPage from "./pages/landingPage/LandingPage"
 import ContactPage from "./pages/contactPage/ContactPage"
 import AboutPage from "./pages/AboutPage/AboutPage"
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import MealsPage from "./pages/mealsPage/MealsPage"
 
 import { getTokenFromCookie } from "./common";
 import { authCheck } from "./utils/user";
@@ -49,6 +50,7 @@ const App = () => {
     <Route path="/contact" element={<ContactPage/>}></Route>
     <Route path="/about" element={<AboutPage/>}></Route>
     <Route path="/profile" element={<ProfilePage/>}></Route>
+    <Route path="/meals" element={<MealsPage/>}></Route>
   </Routes>
 
 </BrowserRouter>
