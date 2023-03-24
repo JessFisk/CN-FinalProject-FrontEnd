@@ -41,7 +41,7 @@ body {
 
 
   #cart{
-    display:flex;
+    display: flex;
     padding-left: 50px;
     padding-right: 150px;
     
@@ -52,4 +52,18 @@ body {
     color: inherit !important;
     font-style: italic;
     font-size: 35px;
+  }
+
+  .goToCheckoutButtons{
+    border: none;
+    padding: 5px 10px;
+    background: #83BD75;
+    font-size: 16px;
+    cursor: pointer;
+    border:10px;
+    border-radius: 5px;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    margin-left: 10px;
   }

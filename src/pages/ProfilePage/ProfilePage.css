@@ -1,0 +1,42 @@
+#profileContainer{
+    width: 50%;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -60%);
+}
+
+#profilePage {
+    text-align: center;
+    font-size: 40px;
+    padding-right: 350px;
+    padding-bottom: 80px;
+}
+
+#label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+  #inputBox {
+    height: 30px;
+    padding-left: 50px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+
+  #btn {
+    height: 30px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+
+  #deleteBtn {
+    margin-left: 100px;
+  }
