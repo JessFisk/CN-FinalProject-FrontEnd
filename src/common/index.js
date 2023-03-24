@@ -1,5 +1,5 @@
 export const writeCookie = (key, value, days = 365) => {
-    let date = new Date()
+    let date = new Date();
 
     date.setDate(date.getDate()+ days);
 
