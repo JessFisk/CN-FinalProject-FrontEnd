@@ -15,7 +15,7 @@ const Header = (props) => {
         <Container className="navBar">
             <Navbar.Brand className="routesContainer">
                 <a href="/"><img id="Logo" className="links" src={Logo} alt="logo"/></a>
-                <Link id="recipes" className="links" to="">Recipes</Link>
+                <Link id="recipes" className="links" to="/meals">Recipes</Link>
                 <Link id="profile" className="links" to="/profile">Profile</Link>
                 <Link id="about" className="links" to="/about">About</Link>
                 <Link id="contact" className="links" to="/contact">Contact</Link>
@@ -27,6 +27,9 @@ const Header = (props) => {
                         <FaShoppingCart color="white" fontSize="25px" />
                         <Badge bg="none">{props.basket.length}</Badge>
                     </Dropdown.Toggle>
+                    <button>
+                        <a href="/login">Login</a>
+                    </button>
                     <Dropdown.Menu style={{ minWidth: 370 }}>
                     {props.basket.map((recipe, index)=>{
                         return(
@@ -44,7 +47,6 @@ const Header = (props) => {
                             <button className="basketRemoveButton">
                             &times;
                             </button>
-              
                             </div>
                             </Dropdown.Item>)})}
                             <Link className="goToCheckoutButtons" to={"/Checkout"}>Go to check out</Link>
