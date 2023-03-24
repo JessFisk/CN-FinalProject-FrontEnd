@@ -10,16 +10,20 @@ import Adam1 from "../../components/images/Adam1.png"
 
 const AboutPage = (props) => {
     return (
-        <div>
+        <div className='aboutContainer'>
             <div className='header'>
                 <h1> About Us </h1>
-                <img id="img" src={AboutBackground} alt="plate of food black background"></img>
+                
             </div>
 
-            <div className='aboutApp'>
+            <div className='aboutApp' style={{backgroundImage: `url(${AboutBackground})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"
+                
+                }}>
                 <img id='logo' src={Logo} alt="Nom logo"></img>
                 <h3>About Nom</h3>
-                <p>Nom is both a recipe information app, and a packaged meal delivery service. <br></br>
+                <p className='aboutText'>Nom is both a recipe information app, and a packaged meal delivery service. <br></br>
                     We provide an extensive list of delicious recipes to suit whatever mood you're in.
                     You can save these recipes to your profile to cook yourself...OR! <br></br>
                     You could purchase them as part of a package and have them delivered to you!
@@ -28,21 +32,22 @@ const AboutPage = (props) => {
 
             <div className='instruct-wrap'>
                 <h3> How to use the App</h3>
+                <div className='steps-wrapper'>
                 <div className='stepOne'>
                     <p className='steps'> Step 1</p>
                     <p className="instructText">
-                    Enter your desired username, email address and a password into our Register User area <br/>
-                    Or sign in if you already have an account <br/>
-                    Don't worry, there's no cost to simply registering
+                    Enter your desired username, email address and a password into our Register User area. <br/>
+                    Or sign in if you already have an account. <br/>
+                    Don't worry, there's no cost to simply registering!
                     </p>
                     <img id='registerImg' src={RegisterExample} alt="representation of register section"></img>
                 </div>
                 <div className='stepTwo'>
                     <p className='steps'>Step 2</p>
                     <p className="instructText">
-                    Browse through our range of delicious meal plans to find the food that suits our mood <br/>
-                    Add them to your Favourites to save them to your profile for later <br/>
-                    Or add them to your basket to order them for delivery
+                    Browse through our range of delicious meal plans to find the food that suits our mood. <br/>
+                    Add them to your Favourites to save them to your profile for later. <br/>
+                    Or add them to your basket to order them for delivery.
                     </p>
                     <img id='recipeImg' src={RecipeInstruct} alt="directions on where to find recipes"></img>
                 </div>
@@ -56,13 +61,15 @@ const AboutPage = (props) => {
                     </p>
                     <img id="checkoutImg" src={Checkout} alt="direction to checkout icon"></img>
                 </div>
+                </div>
             </div>
 
             <div className='Team-Wrapper'>
                 <h3 id='teamHeader'>Meet your Maître d'Apps</h3>
+                <div className='TeamProfile-wrap'>
                 <div className='cathrine-wrap'>
                     <h4 className='name'>Catherine</h4>
-                    <img src={Catherine} alt="catherine's face"></img>
+                    <img className='TeamPics' src={Catherine} alt="catherine's face"></img>
                     <p className='teamText'>Catherine worked on: <br/>
                     Setting up the back-end server and connections <br/>
                     Setting up the routes, models and controllers <br/>
@@ -73,7 +80,7 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Adam-wrap'>
                     <h4 className='name'>Adam</h4>
-                    <img id='adamPic' src={Adam1} alt="Adam's face"></img>
+                    <img className='TeamPics' src={Adam1} alt="Adam's face"></img>
                     <p className='teamText'>Adam worked on: <br/>
                     Writing the front end login, register and sign-in functions <br/>
                     Adding cookies functions to front end <br/>
@@ -110,6 +117,7 @@ const AboutPage = (props) => {
                     Troubleshooting and fixing errors<br/>
                     Recipes page<br/>
                     </p>
+                </div>
                 </div>
             </div>
         </div>

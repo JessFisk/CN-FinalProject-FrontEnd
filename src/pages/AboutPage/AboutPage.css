@@ -1,13 +1,113 @@
-#aboutContainer{
+/* AboutPage{
     width: 50%;
     display: block;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: red solid 5px;
+} */
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#aboutUs {
-    text-align: center;
-    font-size: 40px;
+.header{
+    color: green;
+    display: flex;
+    justify-self: center;
+}
+.aboutApp{
+    width: 75%;
+    color:antiquewhite;
+    word-wrap: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    
+}
+.instruct-wrap{ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border: #40513B double 4px;
+    
+}
+.steps-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+.stepOne{
+    margin: 16px;
+    flex-wrap: wrap;
+    border: green double 3px;
+    font-size: 20px;
+    background-color: #EDF1D6;
+}
+#registerImg{
+    width: 100%;
+    height: 25%
+}
+.stepTwo{
+    margin: 16px;
+    flex-wrap: wrap;
+    border: green double 3px;
+    font-size: 20px;
+    background-color: #EDF1D6;
+}
+.stepThree{
+    margin: 16px;
+    flex-wrap: wrap;
+    border: green double 3px;
+    font-size: 20px;
+    background-color: #EDF1D6;
+}
+
+.Team-Wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: #40513B double 4px;
+    margin: 10px;
+
+}
+.TeamProfile-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #40513B;
+    
+}
+.TeamPics{
+    height: 200px;
+}
+.cathrine-wrap{
+    border: green double 3px;
+    background-color: #EDF1D6;
+}
+.Adam-wrap{
+    border: green double 3px;
+    background-color: #EDF1D6;
+}
+.Chris-wrap{
+    border: green double 3px;
+    background-color: #EDF1D6;
+}
+.Gaz-wrap{
+    border: green double 3px;
+    background-color: #EDF1D6;
+}
+.Jess-wrap{
+    border: green double 3px;
+    background-color: #EDF1D6;
 }
