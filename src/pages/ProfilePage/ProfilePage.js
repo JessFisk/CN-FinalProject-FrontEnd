@@ -1,6 +1,6 @@
 import "./ProfilePage.css";
 import React from "react";
-import { useState, useEffect } from "react";
+
 
 const ProfilePage = (props) => {
 
