@@ -1,9 +1,9 @@
 import React from "react";
-import "./RegisterOrLogContainer.css";
+import "../registerOrLogContainer/RegisterOrLogContainer.css";
 
-import Login from "../login/Login"
-// import Register
-// import Logout
+import Login from "./login/Login";
+import Register from "./register/Register";
+import LogOut from "./logout/Logout";
 
 const RegisterOrLogContainer =({
     user,
@@ -12,6 +12,7 @@ const RegisterOrLogContainer =({
 }) => {
 return(
     <>
+        <div className="Sign-Wrapper">
         <Login
             user = {user}
             setUser = {setUser}
@@ -20,10 +21,11 @@ return(
         <Register
             user = {user} setUser = {setUser}
         />
-        <Logout
+        <LogOut
             setUser = {setUser}
         //other state hooks
         />
+        </div>
     </>
 );
 };

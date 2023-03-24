@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { login } from "../../utils/user";
+import { login } from "../../../utils/user";
 
 const Login = ({user, setUser}) => { //other setStates will be needed but don't know what yet
     const [username, setUsername] = useState();
@@ -29,12 +29,15 @@ return (
             />
             <input
             placeholder="password"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
             />
+            <button type="submit">Login</button>
         </form> 
     </div>
     );
 };
+
 
 export default Login
 
