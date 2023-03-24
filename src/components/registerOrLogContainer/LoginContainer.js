@@ -1,9 +1,10 @@
 import React from "react";
-import "../registerOrLogContainer/RegisterOrLogContainer.css";
+
 
 import Login from "./login/Login";
 
-const RegisterOrLogContainer =({
+
+const LoginContainer =({
     user,
     setUser,
     //other states?
@@ -21,4 +22,4 @@ return(
 );
 };
 
-export default RegisterOrLogContainer;
+export default LoginContainer;
