@@ -6,6 +6,7 @@ import RegisterExample from "../../components/images/RegisterExample.png"
 import RecipeInstruct from "../../components/images/RecipeInstruct.png"
 import Checkout from "../../components/images/Checkout.png"
 import Catherine from "../../components/images/Catherine.jpg"
+import Adam1 from "../../components/images/Adam1.png"
 
 const AboutPage = (props) => {
     return (
@@ -72,7 +73,7 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Adam-wrap'>
                     <h4 className='name'>Adam</h4>
-                    <p>Image will go here when I've got a pretty one</p>
+                    <img id='adamPic' src={Adam1} alt="Adam's face"></img>
                     <p className='teamText'>Adam worked on: <br/>
                     Writing the front end login, register and sign-in functions <br/>
                     Adding cookies functions to front end <br/>
