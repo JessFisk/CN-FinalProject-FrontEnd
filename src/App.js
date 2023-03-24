@@ -14,6 +14,9 @@ import MealsPage from "./pages/mealsPage/MealsPage"
 
 import { getTokenFromCookie } from "./common";
 import { authCheck } from "./utils/user";
+import LoginContainer from "./components/registerOrLogContainer/LoginContainer";
+import RegisterOrLogContainer from "./components/registerOrLogContainer/RegisterOrLogContainer";
+import LogOut from "./components/registerOrLogContainer/logout/Logout";
 
 
 
@@ -53,6 +56,12 @@ const App = () => {
     <Route path="/about" element={<AboutPage/>}></Route>
     <Route path="/profile" element={<ProfilePage user={user}/>}></Route>
     <Route path="/meals" element={<MealsPage user={user}/>}></Route>
+    <Route path="/login" element={<LoginContainer/>}></Route>
+    <Route path="/register" element={<RegisterOrLogContainer/>}></Route>
+    <Route path="/logout" element={<LogOut/>}></Route>
+
+   
+
   </Routes>
 
 </BrowserRouter>

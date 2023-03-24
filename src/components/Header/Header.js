@@ -27,6 +27,9 @@ const Header = (props) => {
                         <FaShoppingCart color="white" fontSize="25px" />
                         <Badge bg="none">{props.basket.length}</Badge>
                     </Dropdown.Toggle>
+                    <button>
+                        <a href="/login">Login</a>
+                    </button>
                     <Dropdown.Menu style={{ minWidth: 370 }}>
                     {props.basket.map((recipe, index)=>{
                         return(
@@ -44,7 +47,6 @@ const Header = (props) => {
                             <button className="basketRemoveButton">
                             &times;
                             </button>
-              
                             </div>
                             </Dropdown.Item>)})}
                             <Link className="goToCheckoutButtons" to={"/Checkout"}>Go to check out</Link>
