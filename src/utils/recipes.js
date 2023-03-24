@@ -1,4 +1,5 @@
 
+
 export const getRecipies = async () => {
     try {
         const response = await fetch (`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12`)
@@ -11,7 +12,4 @@ export const getRecipies = async () => {
         throw new Error('Fetch request failed');
     }
 }
-
-
-
 
