@@ -1,7 +1,33 @@
-.Login-Container {
-    border: 3px blue solid;
+#loginHeader{
+    color: black;
+    padding-left: 75px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.loginContainer {
     display: flex;
     justify-content: center;
+    width: 50%;
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-25%, -60%);
+    margin-top: 100px;
 }
+
+#inputBox{
+}
+
+  #loginBtn{
+    margin-left: 100px;
+  }
+
+  #login{
+    color: black;
+    padding-right: 25px;
+    padding-top: 15px;
+  }
 
 /* just test css, not final */

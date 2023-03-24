@@ -17,6 +17,7 @@ import { authCheck } from "./utils/user";
 import LoginContainer from "./components/registerOrLogContainer/LoginContainer";
 import RegisterOrLogContainer from "./components/registerOrLogContainer/RegisterOrLogContainer";
 import LogOut from "./components/registerOrLogContainer/logout/Logout";
+import Register from "./components/registerOrLogContainer/register/Register";
 
 
 
@@ -57,7 +58,7 @@ const App = () => {
     <Route path="/profile" element={<ProfilePage user={user}/>}></Route>
     <Route path="/meals" element={<MealsPage user={user}/>}></Route>
     <Route path="/login" element={<LoginContainer/>}></Route>
-    <Route path="/register" element={<RegisterOrLogContainer/>}></Route>
+    <Route path="/register" element={<Register/>}></Route>
     <Route path="/logout" element={<LogOut/>}></Route>
 
    

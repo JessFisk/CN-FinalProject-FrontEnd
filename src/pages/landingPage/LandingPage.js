@@ -14,13 +14,13 @@ const images = [
 ]
 
 const LandingPage = (props) => {
-    const [user, setUser] = useState();
+    // const [user, setUser] = useState();
     return (
         <div className="LandingPage-Wrapper">
             <div className='logowrap'>
               <img id="logo" src={Logo} alt="nom white logo"></img>
             {/* <h1 id='Title'> NOM... </h1> */}
-            <RegisterOrLogContainer user={user} setUser={setUser}/>
+            {/* <RegisterOrLogContainer user={user} setUser={setUser}/> */}
             </div>
             <div className="carousel">
             <Carousel useKeyboardArrows={true}>
