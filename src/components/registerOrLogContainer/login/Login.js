@@ -29,6 +29,7 @@ return (
             />
             <input
             placeholder="password"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit">Login</button>
