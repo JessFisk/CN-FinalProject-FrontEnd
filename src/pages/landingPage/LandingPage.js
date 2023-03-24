@@ -25,7 +25,7 @@ const LandingPage = (props) => {
             <div className="carousel">
             <Carousel useKeyboardArrows={true}>
             {images.map((URL, index) => (
-                <div className="slide">
+                <div key={index} className="slide">
                     <img alt="sample_file" src={URL} key={index} />                      
                 </div>
                 ))}

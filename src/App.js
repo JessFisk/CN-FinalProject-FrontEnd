@@ -39,7 +39,9 @@ const App = () => {
 
     const loginWithToken = async (token) => {
       const persistentUser = await authCheck(token);
+      console.log(persistentUser)
       await setUser(persistentUser.user)
+    
     };  
 
   return (
@@ -48,15 +50,18 @@ const App = () => {
     
     <Header basket={basket} updateBasket={setBasket}> </Header>
   <Routes>
-    <Route path="/" element={<LandingPage/>}></Route>
-    <Route path="/checkout" element={<CheckoutPage/>}></Route>
+    <Route path="/" element={<LandingPage user={user}/>}></Route>
+    <Route path="/checkout" element={<CheckoutPage user={user}/>}></Route>
     <Route path="/contact" element={<ContactPage/>}></Route>
     <Route path="/about" element={<AboutPage/>}></Route>
-    <Route path="/profile" element={<ProfilePage/>}></Route>
-    <Route path="/meals" element={<MealsPage/>}></Route>
+    <Route path="/profile" element={<ProfilePage user={user}/>}></Route>
+    <Route path="/meals" element={<MealsPage user={user}/>}></Route>
     <Route path="/login" element={<LoginContainer/>}></Route>
     <Route path="/register" element={<RegisterOrLogContainer/>}></Route>
     <Route path="/logout" element={<LogOut/>}></Route>
+
+   
+
   </Routes>
 
 </BrowserRouter>
