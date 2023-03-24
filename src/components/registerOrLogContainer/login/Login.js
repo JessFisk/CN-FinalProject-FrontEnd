@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { login } from "../../../utils/user";
+import "./Login.css"
 
 const Login = ({user, setUser}) => { //other setStates will be needed but don't know what yet
     const [username, setUsername] = useState();
@@ -20,20 +21,29 @@ const Login = ({user, setUser}) => { //other setStates will be needed but don't 
     }
 };
 return (
-    <div className="Login-Container">
+    <div className="loginContainer">
+        <h1 id="loginHeader">Login</h1>
         <form onSubmit={(e) => submitHandler(e, setUser)} > 
         {/* ^more states might be needed^ */}
             <input
+            id="inputBox"
             placeholder="username"
+            type="text"
             onChange={(e) => setUsername(e.target.value)}
             />
+            <br/>
+            <br/>
             <input
+            id="inputBox"
             placeholder="password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">Login</button>
+            <br/>
+            <br/>
+            <button type="submit" id="loginBtn">Login</button>
         </form> 
+        <p id="login">Not yet registered with us? <a href="/register">Click here.</a></p>
     </div>
     );
 };
