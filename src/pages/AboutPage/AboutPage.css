@@ -7,7 +7,10 @@
     transform: translate(-50%, -50%);
 }
 
-#aboutUs {
-    text-align: center;
-    font-size: 40px;
+.header{
+    color: green;
+}
+.aboutApp{
+    height: fit-content;
+    width: fit-content;
 }

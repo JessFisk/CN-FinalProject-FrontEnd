@@ -10,13 +10,18 @@ import Adam1 from "../../components/images/Adam1.png"
 
 const AboutPage = (props) => {
     return (
-        <div>
+        <div className='aboutContainer'>
             <div className='header'>
                 <h1> About Us </h1>
-                <img id="img" src={AboutBackground} alt="plate of food black background"></img>
+                
             </div>
 
-            <div className='aboutApp'>
+            <div className='aboutApp' style={{backgroundImage: `url(${AboutBackground})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "fill",
+                boxSizing: "content-box"
+            }}>
+
                 <img id='logo' src={Logo} alt="Nom logo"></img>
                 <h3>About Nom</h3>
                 <p>Nom is both a recipe information app, and a packaged meal delivery service. <br></br>
