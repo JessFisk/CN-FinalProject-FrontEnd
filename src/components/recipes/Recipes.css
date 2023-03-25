@@ -1,0 +1,13 @@
+
+.RecipeCards{
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.1);
+}
+
+.recipeCardTitle {
+    font-size: 14px;
+}
+
+.recipeCardBadges {
+    font-size: 12px;
+    text-align: left;
+}

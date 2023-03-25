@@ -1,0 +1,11 @@
+
+#mealPageTitle{
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(5, 83, 5);
+}
+
+.RecipeCardContainer {
+    max-width: 75%;
+    margin: 0 auto;
+}

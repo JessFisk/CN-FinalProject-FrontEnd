@@ -1,13 +1,14 @@
 body {
-    background-color: green;
+    background-color: rgb(252, 252, 252);
 }
-.LandingPage-Wrapper{
-    background-color: #9DC08B;
+
+.LandingPage-Wrapper {
+    background-color: #fbfbfb;
     justify-content: space-between;
     margin: 25px;
     height: 450px;
     border: solid 3px #40513B;
-    
+
 }
 
 .logowrap {
@@ -21,11 +22,71 @@ body {
     justify-self: center;
 }
 
-
-.carousel{
-    width: 30%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+.mainRow {
+    padding: 0;
 }
 
+.carousel {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainBannerImg {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainBannerImg h1 {
+    text-align: center;
+    margin-top: 300px;
+    display: inline-block;
+    color: rgb(252, 252, 252);
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600px;
+    box-shadow: -5px -2px 77px 12px rgba(0, 0, 0, 0.68)
+}
+
+.offerBanner {
+    max-width: 1052px;
+    margin: 0 auto;
+}
+
+.exampleMealsSection {
+    padding: 5%;
+}
+
+.exampleMealsSection h1 {
+    text-align: center;
+
+}
+
+.exampleMealsSection p {
+    text-align: center;
+
+}
+
+.reviewBanner {
+    max-width: 1052px;
+    margin: 0 auto;
+}
+
+.reviewHeaders{
+    text-align: center;
+}
+
+.ReviewSection {
+    padding: 5%;
+}
+
+.ReviewSection h1{
+    text-align: center;
+}
+
+.ReviewSection p{
+    text-align: center;
+}
