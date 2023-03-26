@@ -7,5 +7,29 @@
 
 .RecipeCardContainer {
     max-width: 75%;
+    margin: 50px auto;
+}
+
+.shoppingBannerImg {
+    width: 600px;
     margin: 0 auto;
+    height: 200px;
+    background-size:contain;
+    background-position: left,right;
+    background-repeat: no-repeat;
+}
+
+.shoppingBannerImg h1 {
+    text-align: center;
+    margin-top: 150px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600px;
+    box-shadow: -5px -2px 77px 12px rgba(0, 0, 0, 0.68)
+}
+
+.shoppingRow p {
+    text-align: center;
 }

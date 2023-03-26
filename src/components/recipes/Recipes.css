@@ -1,13 +1,37 @@
 
 .RecipeCards{
     box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.1);
+    border: 7px solid white;
 }
 
 .recipeCardTitle {
     font-size: 14px;
+    text-align: center;
 }
 
 .recipeCardBadges {
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.favouriteSymbol{
+    fill: black;
+    width: 14px;
+}
+
+.addToBox{
+    display: flex;
+    justify-content: center;
+}
+
+.favButton{
+    margin-right:   5px;
+}
+
+.basketSymbol{
+    fill: black;
+    width: 14px;
 }
