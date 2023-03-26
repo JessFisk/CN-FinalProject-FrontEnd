@@ -54,9 +54,5 @@ const MealsPage = (props) => {
 }
 
 
-
-
-
-
 export default MealsPage;
 

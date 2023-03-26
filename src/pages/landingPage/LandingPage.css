@@ -62,7 +62,10 @@ body {
 
 .exampleMealsSection h1 {
     text-align: center;
+}
 
+.exampleMealsSection h4 {
+    text-align: center;
 }
 
 .exampleMealsSection p {
@@ -90,3 +93,5 @@ body {
 .ReviewSection p{
     text-align: center;
 }
+
+
