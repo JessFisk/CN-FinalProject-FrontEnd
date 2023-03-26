@@ -9,6 +9,7 @@
 } */
 
 .aboutContainer{
+    background-color: #B4E197;
     display: flex;
     flex-direction: column;
     align-items: center;
