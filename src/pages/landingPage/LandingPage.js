@@ -36,7 +36,8 @@ const LandingPage = (props) => {
             <Row className="offerBanner">
                 <Col className="mainRow">
                     <div className="exampleMealsSection">
-                        <h1>Take a look at whats on offer</h1>
+                        <h1>Our Products</h1>
+                        <h4>Take a look at whats on offer</h4>
                         <p>Food available to delight your every mood, buy yourself or let us deliver everything you need. </p>
                         <Row xs={1} md={2} lg={3} xl={3} xxl={3} className="g-4">
                             {
@@ -54,7 +55,7 @@ const LandingPage = (props) => {
                 <Col className="mainRow">
                     <div className="ReviewSection">
                         <h1>What our customers think</h1>
-                        <p>Don't just believe us, see what our Chef's have to say about our meals and delivery service... </p>
+                        <p>Don't just believe us, see what other Chef's have to say about our meals and delivery service... </p>
                         <Row xs={1} md={2} className="g-4">
                            
                                 <Col>

@@ -43,7 +43,7 @@ const App = () => {
   const loginWithToken = async (token) => {
     const persistentUser = await authCheck(token);
     console.log(persistentUser)
-    await setUser(persistentUser.user)
+    await setUser(persistentUser)
 
   };
 
@@ -53,7 +53,7 @@ const App = () => {
         <Container fluid>
           <Row>
             <Col className = "mainRow">
-              <Header basket={basket} updateBasket={setBasket}> </Header>
+              <Header basket={basket} updateBasket={setBasket} user={user}> </Header>
               <Routes>
                 <Route path="/" element={<LandingPage user={user} />}></Route>
                 <Route path="/checkout" element={<CheckoutPage user={user} />}></Route>
@@ -61,7 +61,7 @@ const App = () => {
                 <Route path="/about" element={<AboutPage />}></Route>
                 <Route path="/profile" element={<ProfilePage user={user} />}></Route>
                 <Route path="/meals" element={<MealsPage user={user} />}></Route>
-                <Route path="/login" element={<LoginContainer />}></Route>
+                <Route path="/login" element={<LoginContainer setUser={setUser}/>}></Route>
                 <Route path="/register" element={<Register />}></Route>
                 <Route path="/logout" element={<LogOut />}></Route>
 
