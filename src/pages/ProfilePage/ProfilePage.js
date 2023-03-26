@@ -11,9 +11,10 @@ const ProfilePage = (props) => {
     return (
         <div id="profileContainer">
             <h1 id="profilePage"> Profile and Settings </h1>
-            <span><label id="label">Name:<input id="inputBox" type="text"></input><button id="btn">Change name</button></label></span>
-            <span><label id="label">Email:<input id="inputBox" type="email"></input><button id="btn">Change email</button></label></span>
-            <span><label id="label">Password:<input id="inputBox" type="password"></input><button id="btn">Change password</button></label></span>
+            <p>Here you can change your user settings:</p>
+                <label id="label">Name:<input type="text" id="inputBox"></input><button id="btn">Change name</button></label>
+                <label id="label">Email:<input type="email" id="inputBox"></input><button id="btn">Change email</button></label>
+                <label id="label">Password:<input type="password" id="inputBox"></input><button id="btn">Change password</button></label>
             <button id="deleteBtn">DELETE ACCOUNT</button>
         </div>
     )
