@@ -4,6 +4,10 @@ import Card from "react-bootstrap/Card";
 import Badge from 'react-bootstrap/Badge';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { RecipeCard } from "../../components/recipes/Recipes";
+import "./MealsPage.css";
+import shoppingPageImg from "./nom-box.png";
+import shoppingPageImgtwo from "./pexels-vlada-karpovich-6944050.jpg";
 
 const MealsPage = (props) => {
     const [recipeCardData, setRecipeCardData] = useState({ recipes: [] });
@@ -19,59 +23,35 @@ const MealsPage = (props) => {
 
     return (
         <div>
-            <h1> Time to Shop </h1>
-            <Row xs={1} md={2} lg={3} xl={4} xxl={5} className="g-4">
-                {
-                    recipeCardData.recipes.map((recipe, index) => (
-                        <Col key={index}>
-                            <Card  style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={recipe.image} />
-                                <Card.Body>
-                                    <Card.Title>{recipe.title}</Card.Title>
-                                    <Card.Text>
-                                        <Badge bg="secondary">
-                                            Ready in {recipe.readyInMinutes}mins
-                                        </Badge>{' '}
-                                        {recipe.vegetarian && (
-                                            <Badge bg="success">
-                                                Vegetarian
-                                            </Badge>
-                                        )}
-                                        {' '}
-                                        {recipe.vegan && (
-                                            <Badge bg="warning" text="dark">
-                                                Vegan
-                                            </Badge>
-                                        )}
-                                        {' '}
-                                        {recipe.glutenFree && (
-                                            <Badge bg="primary">
-                                                Gluten Free
-                                            </Badge>
-                                        )}
-                                        {' '}
-                                        {recipe.veryHealthy && (
-                                            <Badge bg="info">
-                                                Healthy Option
-                                            </Badge>
-                                        )}
-
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))
-                }
+            <h1 id="mealPageTitle"> Choose your Recipes </h1>
+            <Row>
+                <Col className="shoppingRow">
+                    <div className="shoppingBannerImg" style={{ backgroundImage: `url(${shoppingPageImg}),url(${shoppingPageImgtwo})` }}>
+                        {/* <h1>Once you've started you can't stop...</h1> */}
+                    </div>
+                    <div>
+                        <p>Choose from our fantastic recipes to build your perfect
+                             Nom... Add to your online recipe book or add to your 
+                             box, you choose. </p>
+                    </div>
+                </Col>
             </Row>
+            <div className = "RecipeCardContainer">
+                <Row xs={1} md={2} lg={3} xl={4} xxl={5} className="g-4">
+                    {
+                        recipeCardData.recipes.map((recipe, index) => (
+                            <Col key={index}>
+                                <RecipeCard recipe={recipe} />
+                            </Col>
+                        ))
+                    }
+                </Row>
+            </div>
         </div>
     )
 
 
 }
-
-
-
-
 
 
 export default MealsPage;
