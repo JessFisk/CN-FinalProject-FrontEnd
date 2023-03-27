@@ -24,7 +24,7 @@ const Header = (props) => {
                 <Link id="profile" className="links" to="/profile">Profile</Link>
                 <Link id="about" className="links" to="/about">About</Link>
                 <Link id="contact" className="links" to="/contact">Contact</Link>
-                <Link id="community" className="links" to="">Community</Link>
+                <Link id="community" className="links" to="/community">Community</Link>
             </Navbar.Brand>
             <Nav>
                 <Dropdown id="cart">
@@ -72,7 +72,7 @@ const Header = (props) => {
                     props.user && (
                         <>
                             <Navbar.Text>
-                                Welcome: {props.user.username}
+                                Welcome, {props.user.username}!
                             </Navbar.Text>
 
                             {/* Added Logout button with onClick event that also navigates 
