@@ -22,13 +22,13 @@ body {
     font-size: 40px;
 }
 
-.btn-primary {
+#contact-form .btn-primary {
     margin: 15px;
     margin-left: 270px;
     background-color: #4E944F;
     border: black;
 }
 
-.btn-primary:hover {
+#contact-form .btn-primary:hover {
    background-color: #228B22;
 }

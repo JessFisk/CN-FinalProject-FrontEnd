@@ -34,9 +34,6 @@ body {
 
   #cart{
     display: flex;
-    padding-left: 50px;
-    padding-right: 150px;
-    
   }
   
   #pageheader {
@@ -60,5 +57,8 @@ body {
     margin-left: 10px;
   }
 
+  .welcomeText {
+    margin: 0 10px;
+  }
 
   
