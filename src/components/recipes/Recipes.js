@@ -10,7 +10,7 @@ import "./Recipes.css";
 export const RecipeCard = (props) => {
     const recipe = props.recipe;
     return (
-        <Card className="RecipeCards" style={{ width: '13rem', margin: '0 auto' }}>
+        <Card onClick = { props.onClick } className="RecipeCards" style = {{ width: '13rem', margin: '0 auto' }}>
             <Card.Img variant="top" src={recipe.image} />
             <Card.Body>
                 <Card.Title className="recipeCardTitle">{recipe.title}</Card.Title>

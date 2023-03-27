@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { getRecipies } from "../../utils/recipes";
-// import Card from "react-bootstrap/Card";
-// import Badge from 'react-bootstrap/Badge';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { RecipeCard } from "../../components/recipes/Recipes";
@@ -9,13 +7,14 @@ import "./MealsPage.css";
 import shoppingPageImg from "./nom-box.png";
 import shoppingPageImgtwo from "./pexels-vlada-karpovich-6944050.jpg";
 import { Navigate } from "react-router-dom";
-// import Button from 'react-bootstrap/Button';
-// import Modal from 'react-bootstrap/Modal';
+import RecipeModal from "../../components/modal/Modal";
+
 
 
 const MealsPage = (props) => {
-
+    const [modalShow, setModalShow] = useState(false);
     const [recipeCardData, setRecipeCardData] = useState({ recipes: [] });
+    const [modalRecipe, setModalRecipe] = useState();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -28,13 +27,13 @@ const MealsPage = (props) => {
 
         }
         fetchData();
-    },[]);
+    }, [props.user]);
 
 
     //Navigate to login page if user is not logged in 
-if (!props.user){
-    return <Navigate to = "/login" replace/>
-}
+    if (!props.user) {
+        return <Navigate to="/login" replace />
+    }
 
     return (
         props.user && (
@@ -57,15 +56,30 @@ if (!props.user){
                         {
                             recipeCardData.recipes.map((recipe, index) => (
                                 <Col key={index}>
-                                    <RecipeCard recipe={recipe} user= {props.user} />
+                                    <RecipeCard recipe={recipe} user={props.user}
+                                        onClick={() => {
+                                            setModalShow(true);
+                                            setModalRecipe(recipe);
+                                        }}
+                                    />
                                 </Col>
                             ))
                         }
                     </Row>
                 </div>
+                {modalRecipe && (
+                    <RecipeModal
+                    recipe={modalRecipe}
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
+                )}
+                
             </div>
         )
     )
+
+
 
 
 }

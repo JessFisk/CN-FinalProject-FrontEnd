@@ -1,0 +1,10 @@
+.modalFooterBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modalFooterBox button {
+    margin: 0 5px;
+}

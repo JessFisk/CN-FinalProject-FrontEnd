@@ -71,7 +71,7 @@ const Header = (props) => {
                 {
                     props.user && (
                         <>
-                            <Navbar.Text>
+                            <Navbar.Text className="welcomeText">
                                 Welcome, {props.user.username}!
                             </Navbar.Text>
 
