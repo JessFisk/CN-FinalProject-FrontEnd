@@ -42,12 +42,22 @@ export const RecipeCard = (props) => {
                         </Badge>
                     )}
                     <br /><br />
-                    </Card.Text>
+                </Card.Text>
+                {/* added a function to not show basket and Favourite buttons on homesceen*/}
+                
+                
+                {
+                props.user && (
+                    <>
                     <div className="addToBox">
-                        <Button className="favButton" variant="outline-dark" size="sm"><Heart className="favouriteSymbol" /></Button>
-                        {' '}
-                        <Button variant="outline-dark" size="sm"><Basket className="basketSymbol" /></Button>
+                    <Button className="favButton" variant="outline-dark" size="sm"><Heart className="favouriteSymbol" /></Button>
+                    {' '}
+                    <Button variant="outline-dark" size="sm"><Basket className="basketSymbol" /></Button>
                     </div>
+                    </>
+                    )
+                }
+                
                 
             </Card.Body>
         </Card>
