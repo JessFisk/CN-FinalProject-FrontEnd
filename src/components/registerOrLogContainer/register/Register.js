@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {registerUser} from "../../../utils/user";
+import "./Register.css"
 
 const Register = ({user, setUser}) => {
     const [username, setUsername] = useState();
@@ -20,25 +21,36 @@ const Register = ({user, setUser}) => {
     };
 
     return(
-        <div className="register-form">
+        <div className="registerContainer">
+            <h1 id="registerHeader">Sign Up</h1>
             <form onSubmit={(e) => submitHandler(e, setUser)}>
                 <input
+                    id="inputBox"
                     placeholder="username"
                     type="text"
                     onChange={(e) => setUsername(e.target.value)}
                 />
+                <br/>
+                <br/>
                 <input
+                    id="inputBox"
                     placeholder="email"
                     type="email"
                     onChange={(e) => setEmail(e.target.value)}
                 />
+                <br/>
+                <br/>
                 <input
+                    id="inputBox"
                     placeholder="password"
                     type="password"
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Register New User</button>
+                <br/>
+                <br/>
+                <button type="submit" id="registerBtn">Register New User</button>
             </form>
+            <p id="register">Already got an account with us? <a href="/login">Click here.</a></p>
         </div>
     );
 };

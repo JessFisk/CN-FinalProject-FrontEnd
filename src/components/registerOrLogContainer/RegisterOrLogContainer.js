@@ -2,8 +2,6 @@ import React from "react";
 import "../registerOrLogContainer/RegisterOrLogContainer.css";
 
 import Login from "./login/Login";
-import Register from "./register/Register";
-import LogOut from "./logout/Logout";
 
 const RegisterOrLogContainer =({
     user,
@@ -17,13 +15,6 @@ return(
             user = {user}
             setUser = {setUser}
             //other states
-        />
-        <Register
-            user = {user} setUser = {setUser}
-        />
-        <LogOut
-            setUser = {setUser}
-        //other state hooks
         />
         </div>
     </>
