@@ -1,3 +1,4 @@
+
 #nolog-msg{
     font-size: 40;
     position: fixed;
@@ -7,24 +8,29 @@
     border: blue solid 3px;
 }
 
+.usersInfo-wrap {
+    background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+	place-items: center
+}
+
 .usersInfo{
-   border: red solid 3px;
+   border: #023020 solid 3px;
    font-size: 20px;
    margin: 10px;    
-   width: 25%
-}
-.usersInfo-wrap{
-    border: purple 5px solid;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+   height: 90%;
+   width: 40%;
+   text-align: center;
+   background-color: #B4E197;
 }
 
-#profile_pictures{
+.profile_picture{
+    margin-top: 7px;
     width: 100px;
     height: 100px;
     border-radius: 70%;
-    border: green 2px solid;
+    border: black 2px solid;
 }

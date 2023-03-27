@@ -26,10 +26,10 @@ const Login = ({user, setUser}) => { //other setStates will be needed but don't 
 return (
     <div className="loginContainer">
         <h1 id="loginHeader">Login</h1>
-        <form onSubmit={(e) => submitHandler(e, setUser)} > 
+        <form onSubmit={(e) => submitHandler(e, setUser)} id="loginForm"> 
         {/* ^more states might be needed^ */}
             <input
-            id="inputBox"
+            id="loginInput"
             placeholder="username"
             type="text"
             onChange={(e) => setUsername(e.target.value)}
@@ -37,14 +37,14 @@ return (
             <br/>
             <br/>
             <input
-            id="inputBox"
+            id="loginInput"
             placeholder="password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             />
             <br/>
             <br/>
-            <button type="submit" id="loginBtn">Login</button>
+            <button type="submit" id="loginButton">Login</button>
         </form> 
         <p id="login">Not yet registered with us? <a href="/register">Click here.</a></p>
     </div>

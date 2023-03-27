@@ -5,6 +5,7 @@ body {
   
   #navbarBackground{
     background-color: #4E944F;
+    border-bottom: #023020 5px solid;
   }
   
   .Logo {
@@ -45,6 +46,31 @@ body {
     font-style: italic;
     font-size: 35px;
   }
+
+  #logoutBtn{
+    position: absolute;
+    left: 74%;
+    background-color: #B4E197;
+    color:#023020;
+    border:#023020 1px solid;
+  }
+
+  #logoutBtn:hover{
+    background-color: #83BD75;
+  }
+
+  #loginBtn{
+    margin-right: 100px;
+    background-color: #B4E197;
+    color:#023020;
+    border:#023020 1px solid;
+  }
+
+  #loginBtn:hover{
+    background-color: #83BD75;
+  }
+
+
 
   .goToCheckoutButtons{
     border: none;

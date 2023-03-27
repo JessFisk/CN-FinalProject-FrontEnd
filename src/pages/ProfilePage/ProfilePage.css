@@ -1,6 +1,14 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #profileContainer{
     text-align: center;
     width: 50%;
+    margin-top: 70px;
     display: block;
     position: fixed;
     top: 50%;
