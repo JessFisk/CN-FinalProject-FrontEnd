@@ -1,5 +1,4 @@
-export const logout = (e, setUser,) => { //other setStates like recipe etc?
-    e.preventDefault();
+export const logout = (setUser) => { //other setStates like recipe etc?
   
     setUser(null);
     // other useStates go here

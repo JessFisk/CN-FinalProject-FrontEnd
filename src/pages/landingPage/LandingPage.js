@@ -43,7 +43,7 @@ const LandingPage = (props) => {
                             {
                                 recipes.recipes.map((recipe, index) => (
                                     <Col key={index}>
-                                        <RecipeCard recipe={recipe} />
+                                        <RecipeCard recipe={recipe} user={props.user} />
                                     </Col>
                                 ))
                             }

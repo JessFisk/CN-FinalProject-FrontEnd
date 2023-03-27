@@ -10,9 +10,12 @@ import { FaShoppingCart } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Logo from "../images/WhiteNom.png"
+import { logout } from "../../utils/index.js"
+import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
     console.log(props)
+    const navigate = useNavigate()
     return <Navbar id="navbarBackground" variant="dark" style={{ height: 80 }}>
         <Container className="navBar">
             <Navbar.Brand className="routesContainer">
@@ -29,9 +32,16 @@ const Header = (props) => {
                         <FaShoppingCart color="white" fontSize="25px" />
                         <Badge bg="none">{props.basket.length}</Badge>
                     </Dropdown.Toggle>
-                    <Button href="/login">
-                        Login
-                    </Button>
+                    {/* This means the login button will hide when someone is logged in.
+                    (only showing the Welcome:username and logout) */}
+                    {
+                        !props.user && (
+                            <Button href="/login">
+                                Login
+                            </Button>
+                        )
+                    }
+
                     <Dropdown.Menu style={{ minWidth: 370 }}>
                         {props.basket.map((recipe, index) => {
                             return (
@@ -65,7 +75,15 @@ const Header = (props) => {
                                 Welcome: {props.user.username}
                             </Navbar.Text>
 
-                            <Button href="/login">
+                            {/* Added Logout button with onClick event that also navigates 
+                            back to the landing page on logout need to add use navigate at top too.*/}
+                            <Button
+                                onClick={
+                                    () => {
+                                        logout(props.setUser);
+                                        navigate("/")
+                                    }
+                                }>
                                 Logout
                             </Button>
                         </>

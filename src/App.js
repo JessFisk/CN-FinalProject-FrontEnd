@@ -53,7 +53,7 @@ const App = () => {
         <Container fluid>
           <Row>
             <Col className = "mainRow">
-              <Header basket={basket} updateBasket={setBasket} user={user}> </Header>
+              <Header basket={basket} updateBasket={setBasket} user={user} setUser= {setUser}> </Header>
               <Routes>
                 <Route path="/" element={<LandingPage user={user} />}></Route>
                 <Route path="/checkout" element={<CheckoutPage user={user} />}></Route>

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { login } from "../../../utils/user";
 import "./Login.css"
+import { useNavigate } from "react-router-dom";
 
 const Login = ({user, setUser}) => { //other setStates will be needed but don't know what yet
     const [username, setUsername] = useState();
     const [password, setPassword] = useState();
+    const navigate = useNavigate()
 
     const submitHandler = async (e, setUser) => {// plus other setStates as defined
     e.preventDefault();
@@ -14,6 +16,7 @@ const Login = ({user, setUser}) => { //other setStates will be needed but don't 
 
         if (userData.message === "success") {
             setUser(userData.user);
+            navigate("/meals")
             //other profile info, recipes etc
         }
     } catch (error){
