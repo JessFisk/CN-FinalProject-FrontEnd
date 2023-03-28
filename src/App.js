@@ -62,8 +62,8 @@ const App = () => {
                 <Route path="/about" element={<AboutPage />}></Route>
                 <Route path="/profile" element={<ProfilePage user={user} />}></Route>
                 <Route path="/meals" element={<MealsPage user={user} basket={basket} updateBasket={setBasket}/>}></Route>
-                <Route path="/login" element={<LoginContainer setUser={setUser}/>}></Route>
-                <Route path="/register" element={<Register />}></Route>
+                <Route path="/login" element={<LoginContainer setUser={setUser} />}></Route>
+                <Route path="/register" element={<Register setUser={setUser} />}></Route>
                 <Route path="/logout" element={<LogOut />}></Route>
                 <Route path="/community" element={<CommunityPage user={user} />}></Route>
               </Routes>
@@ -71,7 +71,6 @@ const App = () => {
           </Row>
         </Container>
       </BrowserRouter>
-
     </>
   );
 
