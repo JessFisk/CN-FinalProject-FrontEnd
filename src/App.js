@@ -60,7 +60,7 @@ const App = () => {
                 <Route path="/checkout" element={<CheckoutPage basket={basket} updateBasket={setBasket} user={user} setUser= {setUser} />}></Route>
                 <Route path="/contact" element={<ContactPage />}></Route>
                 <Route path="/about" element={<AboutPage />}></Route>
-                <Route path="/profile" element={<ProfilePage user={user} />}></Route>
+                <Route path="/profile" element={<ProfilePage user={user} setUser = {setUser} />}></Route>
                 <Route path="/meals" element={<MealsPage user={user} basket={basket} updateBasket={setBasket}/>}></Route>
                 <Route path="/login" element={<LoginContainer setUser={setUser} />}></Route>
                 <Route path="/register" element={<Register setUser={setUser} />}></Route>
