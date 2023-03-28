@@ -7,10 +7,7 @@ import { useNavigate } from "react-router-dom";
 const ProfilePage = (props) => {
     const navigate = useNavigate ()
     return (
-        // <div style={{backgroundImage: `url("https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
-        // backgroundRepeat: "no-repeat",
-        // backgroundAttachment: "fixed",
-        // backgroundSize: "cover"}}>
+        props.user &&
         <div id="profileContainer">
             <h1 id="profilePage"> Profile and Settings </h1>
             <p>Here you can change your user settings:</p>

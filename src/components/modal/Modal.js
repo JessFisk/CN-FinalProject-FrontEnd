@@ -1,9 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "./Modal.css";
-import { useState } from 'react';
-
-
 
 function RecipeModal(props) {
   console.log("props.basket", props.basket)
