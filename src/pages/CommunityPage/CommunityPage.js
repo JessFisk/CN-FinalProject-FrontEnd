@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { getAllUsers } from "../../utils/user";
+import { Navigate } from "react-router-dom";
 import "./CommunityPage.css"
 // import {img1} from "https://t3.ftcdn.net/jpg/01/77/54/02/360_F_177540231_SkxuDjyo8ECrPumqf0aeMbean2Ai1aOK.jpg"
 // const images = [
@@ -28,10 +29,8 @@ const CommunityPage = (props) => {
     fetchUsers();
     }, []);
 
-if (!props.user){
-  <div className="no-sign-wrap">
-  return <p id="nolog-msg">Please login in or register to view other users</p>
-  </div>
+if (!props.user) {
+  return <Navigate to="/login" replace />
 }
 // Need to map the images and the users at the same time - try a div?
   return(
