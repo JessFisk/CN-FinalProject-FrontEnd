@@ -7,7 +7,7 @@ const Checkout = (props) => {
         const [total, setTotal] = useState();
     
         useEffect(() => {
-            setTotal(props.basket.reduce((acc, curr) => acc + Number(curr.price), 0))
+            setTotal(props.basket.reduce((acc, curr) => acc + Number(curr.pricePerServing.toFixed(2/10)/10), 0))
         }, [props.basket])
     
         return (
