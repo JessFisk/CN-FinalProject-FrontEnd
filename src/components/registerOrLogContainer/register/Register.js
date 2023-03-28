@@ -25,7 +25,7 @@ const Register = ({user, setUser}) => {
             <h1 id="registerHeader">Sign Up</h1>
             <form onSubmit={(e) => submitHandler(e, setUser)}>
                 <input
-                    id="inputBox"
+                    id="registerInput"
                     placeholder="username"
                     type="text"
                     onChange={(e) => setUsername(e.target.value)}
@@ -33,7 +33,7 @@ const Register = ({user, setUser}) => {
                 <br/>
                 <br/>
                 <input
-                    id="inputBox"
+                    id="registerInput"
                     placeholder="email"
                     type="email"
                     onChange={(e) => setEmail(e.target.value)}
@@ -41,7 +41,7 @@ const Register = ({user, setUser}) => {
                 <br/>
                 <br/>
                 <input
-                    id="inputBox"
+                    id="registerInput"
                     placeholder="password"
                     type="password"
                     onChange={(e) => setPassword(e.target.value)}

@@ -36,7 +36,8 @@ const Header = (props) => {
                     (only showing the Welcome:username and logout) */}
                     {
                         !props.user && (
-                            <Button href="/login">
+                            <Button href="/login"
+                            id="loginBtn">
                                 Login
                             </Button>
                         )
@@ -78,6 +79,7 @@ const Header = (props) => {
                             {/* Added Logout button with onClick event that also navigates 
                             back to the landing page on logout need to add use navigate at top too.*/}
                             <Button
+                            id="logoutBtn"
                                 onClick={
                                     () => {
                                         logout(props.setUser);

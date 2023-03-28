@@ -3,31 +3,40 @@
     padding-left: 75px;
     padding-bottom: 50px;
     padding-top: 50px;
+    margin-left: 83px;
+}
+
+#loginForm{
+ margin-left: 80px;
 }
 
 .loginContainer {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    display: block;
+    width: 30%;
     position: fixed;
-    top: 20%;
-    left: 50%;
+    top: 30%;
+    left: 43%;
     transform: translate(-25%, -60%);
-    margin-top: 100px;
+    margin-top: 190px;
+    border: 1px transparent;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 2px #023020;
+    background-color: #B4E197;
 }
 
-#inputBox{
+#loginInput{
+  text-align: center;
+  margin-left: 40px;
 }
 
-  #loginBtn{
-    margin-left: 100px;
+  #loginButton{
+    margin-left: 105px;
   }
 
   #login{
     color: black;
     padding-right: 25px;
     padding-top: 15px;
+    margin-left: 80px;
   }
 
 /* just test css, not final */

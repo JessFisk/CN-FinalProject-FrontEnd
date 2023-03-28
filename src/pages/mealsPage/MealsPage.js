@@ -37,7 +37,7 @@ const MealsPage = (props) => {
 
     return (
         props.user && (
-            <div>
+            <div className="recipePageContainer">
                 <h1 id="mealPageTitle"> Choose your Recipes </h1>
                 <Row>
                     <Col className="shoppingRow">
