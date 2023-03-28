@@ -1,10 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "./Modal.css";
+import { useState } from 'react';
 
 
 
 function RecipeModal(props) {
+  console.log("props.basket", props.basket)
   const recipe = props.recipe;
   return (
     <Modal
@@ -28,11 +30,14 @@ function RecipeModal(props) {
           </ul>
         </p>
         <p> {recipe.instructions}</p>
+        <p>£{recipe.pricePerServing.toFixed(2/10)/10}</p>
       </Modal.Body>
       <Modal.Footer> 
         <div className='modalFooterBox'>
           <Button className='modalFooterButton' variant="secondary">Favourite</Button>
-          <Button className='modalFooterButton' variant="primary">Add to Basket</Button>
+          <Button className='modalFooterButton' variant="primary" onClick={() => 
+          {props.updateBasket([...props.basket, recipe])
+              }}>Add to Basket</Button>
         </div>
         </Modal.Footer>
     </Modal>

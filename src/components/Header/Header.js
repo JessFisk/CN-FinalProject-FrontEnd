@@ -50,11 +50,11 @@ const Header = (props) => {
                                     <div key={index} className="checkoutRecipeBoxes">
 
                                         <div className="basketItemNames">
-                                            <p>{recipe.name}</p>
+                                            <p>{recipe.title}</p>
                                         </div>
 
                                         <div className="basketItemPrice">
-                                            <p>{recipe.price}</p>
+                                            <p>£{recipe.pricePerServing.toFixed(2/10)/10}</p>
                                         </div>
 
                                         <button className="basketRemoveButton">
@@ -63,7 +63,7 @@ const Header = (props) => {
                                     </div>
                                 </Dropdown.Item>)
                         })}
-                        <Link className="goToCheckoutButtons" to={"/Checkout"}>Go to check out</Link>
+                        <Link className="goToCheckoutButtons" to={"/checkout"}>Go to check out</Link>
                     </Dropdown.Menu>
                 </Dropdown>
 
