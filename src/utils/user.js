@@ -61,6 +61,44 @@ export const login = async (e, username, password) => {
     };
 };
 
+
+export const deleteUser = async (jwt_token, username) => {
+
+    try {
+
+        const response = await fetch(
+            `${process.env.REACT_APP_BACKEND_URL}/users/deleteuser`,
+            {
+                method: "DELETE",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `${jwt_token}`
+                },
+                body: JSON.stringify({
+                    username: username,
+                   
+                })
+            }
+        );
+        const data = await response.json()
+        
+
+        e.target.reset();
+        return data;
+    } catch (error) {
+        console.log
+    }
+
+}
+
+
+
+
+
+
+
+
 export const authCheck = async (jwt_token) => {
     try {
         const response = await fetch(
