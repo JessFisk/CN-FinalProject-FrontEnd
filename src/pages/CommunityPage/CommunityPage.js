@@ -18,6 +18,7 @@ const CommunityPage = (props) => {
     fetchUsers();
     }, []);
 
+
 if (!props.user){
   return <Navigate to="/login" replace />
 }

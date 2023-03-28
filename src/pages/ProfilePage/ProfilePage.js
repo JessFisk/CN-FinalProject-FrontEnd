@@ -1,12 +1,11 @@
 import "./ProfilePage.css";
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { deleteUser } from "../../utils/user";
+import { useNavigate } from "react-router-dom";
 
 
 const ProfilePage = (props) => {
-    if (!props.user){
-        return <Navigate to="/login" replace />
-      }
+    const navigate = useNavigate ()
     return (
         props.user &&
         <div id="profileContainer">
@@ -15,7 +14,15 @@ const ProfilePage = (props) => {
                 <label id="label">Name: <input type="text" id="inputBox"></input><button id="btn">Change name</button></label>
                 <label id="label">Email: <input type="email" id="inputBox"></input><button id="btn">Change email</button></label>
                 <label id="label">Password: <input type="password" id="inputBox"></input><button id="btn">Change password</button></label>
-            <button id="deleteBtn">DELETE ACCOUNT</button>
+                <button id="deleteBtn"
+                onClick={
+                    () => {
+                        console.log(props);
+                        deleteUser(props.user.token, props.user.username);
+                        navigate("/")
+                    }
+                }
+            > DELETE ACCOUNT</button >
         </div>
     // </div>
     )
