@@ -129,6 +129,7 @@ export const deleteUser = async (jwt_token, username) => {
                 })
             }
         );
+        
     } catch (error) {
         console.log (error)
     }

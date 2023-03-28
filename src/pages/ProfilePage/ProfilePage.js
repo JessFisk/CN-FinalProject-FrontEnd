@@ -2,6 +2,7 @@ import "./ProfilePage.css";
 import React from "react";
 import { deleteUser } from "../../utils/user";
 import { useNavigate } from "react-router-dom";
+import { logout } from "../../utils";
 
 
 const ProfilePage = (props) => {
@@ -20,6 +21,7 @@ const ProfilePage = (props) => {
                         console.log(props);
                         deleteUser(props.user.token, props.user.username);
                         navigate("/")
+                        logout(props.setUser)
                     }
                 }
             > DELETE ACCOUNT</button >
