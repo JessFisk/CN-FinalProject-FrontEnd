@@ -61,8 +61,60 @@ export const login = async (e, username, password) => {
     };
 };
 
+// const upBook = async (req, res) => {
+//     try{
+    
+//     console.log(req.body)
+    
+//     const bookUpdated = await Book.update({author:req.body.newAuthor},{
+//     where: {
+//         title: req.body.title,
+        
+//     }
+//     });
+//         res.status(201).json({message: "book updated", books: bookUpdated})
+//     }catch(error){
+//         res.status(501).json({errorMessage: error.message, error: error});
+    
+//     }
+//     }
 
-export const deleteUser = async (jwt_token, username) => {
+
+
+
+export const updateUser = async (jwt_token, username, email, password, e) => {
+
+    try {
+
+        const response = await fetch(
+            `${process.env.REACT_APP_BACKEND_URL}/users/updateusername`,
+            {
+                method: "PUT",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `${jwt_token}`
+                },
+                body: JSON.stringify({
+                    username: username,
+                    email: email, 
+                    password: password,
+                })
+
+            }
+
+        );
+        const data = await response.json()
+
+        e.target.reset();
+        return data;
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+export const deleteUser = async (e, jwt_token, username) => {
 
     try {
 
@@ -87,7 +139,7 @@ export const deleteUser = async (jwt_token, username) => {
         e.target.reset();
         return data;
     } catch (error) {
-        console.log
+        console.log(error)
     }
 
 }

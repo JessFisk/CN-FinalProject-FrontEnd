@@ -27,7 +27,6 @@ return (
     <div className="loginContainer">
         <h1 id="loginHeader">Login</h1>
         <form onSubmit={(e) => submitHandler(e, setUser)} > 
-        {/* ^more states might be needed^ */}
             <input
             id="inputBox"
             placeholder="username"
