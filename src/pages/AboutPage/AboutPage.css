@@ -1,13 +1,3 @@
-/* AboutPage{
-    width: 50%;
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: red solid 5px;
-} */
-
 .aboutContainer{
     background-color: #B4E197;
     display: flex;
@@ -17,23 +7,32 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
 }
 
-.header{
-    color: green;
-    display: flex;
-    justify-self: center;
+#nomLogo{
+    width: 40%;
+    margin-top: 20px; 
 }
-.aboutApp{
-    width: 75%;
-    color:antiquewhite;
+
+.aboutText{
+    color:#40513B;
+    text-align: center;
     word-wrap: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    
+    font-size: 20px;
+}
+
+.headerContainer{
+    background-color: rgba(255, 255, 255, 0.80);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#40513B;
+    text-align: center;
+    width: 80%;
+}
+
+.aboutApp{
+    text-align: center;
+    font-size: 30px;
 }
 .instruct-wrap{ 
     display: flex;
@@ -41,38 +40,15 @@
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    border: #40513B solid 5px;
     margin: 10px;
-    
 }
 .steps-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
+    margin-bottom: 50px;
 }
-.stepOne{
-    margin: 16px;
-    padding: 5px;
-    flex-wrap: wrap;
-    border: green solid 3px;
-    font-size: 20px;
-    background-color: #EDF1D6;
-}
-#registerImg{
-    width: 100%;
-    height: 25%
-}
-.stepTwo{
-    margin: 16px;
-    padding: 5px;
-    flex-wrap: wrap;
-    border: green solid 3px;
-    font-size: 20px;
-    background-color: #EDF1D6;
-}
-.stepThree{
+.stepOne, .stepTwo, .stepThree{
     margin: 16px;
     padding: 5px;
     flex-wrap: wrap;
@@ -81,12 +57,21 @@
     background-color: #EDF1D6;
 }
 
+.howTo, .teamHeader{
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 15px;
+}
+
+#registerImg{
+    width: 100%;
+    height: 25%
+}
+
 .Team-Wrapper{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    border: #40513B solid 5px;
     margin: 10px;
 
 }

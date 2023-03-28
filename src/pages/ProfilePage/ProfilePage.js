@@ -3,10 +3,16 @@ import React from "react";
 import { deleteUser } from "../../utils/user";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../utils";
+import { Navigate } from "react-router-dom";
 
 
 const ProfilePage = (props) => {
     const navigate = useNavigate ()
+
+    if (!props.user) {
+        return <Navigate to="/login" replace />
+    }
+    
     return (
         props.user &&
         <div id="profileContainer">
