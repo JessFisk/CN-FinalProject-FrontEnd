@@ -72,6 +72,8 @@ const MealsPage = (props) => {
                     recipe={modalRecipe}
                     show={modalShow}
                     onHide={() => setModalShow(false)}
+                    basket={props.basket}
+                    updateBasket={props.updateBasket}
                 />
                 )}
                 
