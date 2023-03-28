@@ -32,6 +32,8 @@ export const registerUser = async (e, username, email, password) => {
     }
 };
 
+
+
 export const login = async (e, username, password) => {
     console.log("login function called")
 
@@ -61,6 +63,8 @@ export const login = async (e, username, password) => {
     };
 };
 
+
+
 export const getAllUsers = async () => {
     try {
         const token = getTokenFromCookie("jwt_token");
@@ -81,6 +85,8 @@ export const getAllUsers = async () => {
         console.log(error);
     }
 };
+
+
 
 export const authCheck = async (jwt_token) => {
     try {
@@ -104,3 +110,26 @@ export const authCheck = async (jwt_token) => {
     };
 };
 
+
+
+export const deleteUser = async (jwt_token, username) => {
+    try {
+        await fetch(
+            `${process.env.REACT_APP_BACKEND_URL}/users/deleteuser`,
+            {
+                method: "DELETE",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `${jwt_token}`
+                },
+                body: JSON.stringify({
+                    username: username,
+                   
+                })
+            }
+        );
+    } catch (error) {
+        console.log (error)
+    }
+}
