@@ -16,7 +16,7 @@ const CommunityPage = (props) => {
       }
     }
     fetchUsers();
-    }, []);
+    }, [props.user]);
 
 
 if (!props.user){
