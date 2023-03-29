@@ -1,114 +1,110 @@
 body {
-    background-color: rgb(234, 234, 234);
-  }
-  
-  
-  #navbarBackground{
-    background-color: #4E944F;
-    border-bottom: #023020 5px solid;
-  }
-  
-  #Logo {
-    width: 70px;
-  }
-  
-  .name {
-    margin-left: 120px;
-  }
-  
-  #links {
-    color: #E9EFC0 !important;
-    text-decoration: none;
-    padding: 20px;
-    margin-left: 70px;
-    font-size: 20px;
-  }
-
-  #links :hover {
-    color: white;
-  }
-
-  .routesContainer :hover{
-    color: white;
-  }
+  background-color: rgb(234, 234, 234);
+}
 
 
-  #cart{
-    margin-left: -250px;
-    margin-right: 50px;
-  }
-  
-  #pageheader {
-    text-decoration: none !important;
-    color: inherit !important;
-    font-style: italic;
-    font-size: 35px;
-  }
+#navbarBackground{
+  background-color: #4E944F;
+  border-bottom: #023020 5px solid;
+}
 
-  #logoutBtn{
-    background-color: #B4E197;
-    color:#023020;
-    border:#023020 1px solid;
-  }
+#Logo {
+  width: 70px;
+}
 
-  #logoutBtn:hover{
-    background-color: #83BD75;
-  }
+.name {
+  margin-left: 120px;
+}
 
-  #loginBtn{
-    background-color: #B4E197;
-    color:#023020;
-    border:#023020 1px solid;
-  }
+#links {
+  color: #E9EFC0 !important;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 70px;
+  font-size: 20px;
+}
 
-  #loginBtn:hover{
-    background-color: #83BD75;
-  }
+#links :hover {
+  color: white;
+}
 
-  #dropdownContainer{
-  }
+.routesContainer :hover{
+  color: white;
+}
 
-  .checkoutRecipeBoxes{
-    border: 2px solid rgb(8, 8, 79);
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 2px;
-    background-color:white;
-    white-space: nowrap;
-    overflow: hidden;
-  }
 
-  .basketItemNames{
-    text-align: center;
-    color: rgb(8, 8, 79);
-  }
-  
-  .basketItemPrice{
-    text-align: center;
-    color: rgb(8, 8, 79);
-    margin-bottom: -20px;
-  }
-  
-  .basketRemoveButton{
-      border: none;
-      background: none;
-      font-size: 14px;
-      cursor: pointer;
-      color: white;
-      border-radius: 70px;
-  }
+#cart{
+  margin-left: -250px;
+  margin-right: 50px;
+}
 
-  .goToCheckoutButtons{
+#pageheader {
+  text-decoration: none !important;
+  color: inherit !important;
+  font-style: italic;
+  font-size: 35px;
+}
+
+#logoutBtn{
+  background-color: #B4E197;
+  color:#023020;
+  border:#023020 1px solid;
+}
+
+#logoutBtn:hover{
+  background-color: #83BD75;
+}
+
+#loginBtn{
+  background-color: #B4E197;
+  color:#023020;
+  border:#023020 1px solid;
+}
+
+#loginBtn:hover{
+  background-color: #83BD75;
+}
+
+.checkoutRecipeBoxes{
+  border: 2px solid rgb(8, 8, 79);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 2px;
+  background-color:white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.basketItemNames{
+  text-align: center;
+  color: rgb(8, 8, 79);
+}
+
+.basketItemPrice{
+  text-align: center;
+  color: rgb(8, 8, 79);
+  margin-bottom: -20px;
+}
+
+.basketRemoveButton{
     border: none;
-    padding: 5px 10px;
-    background: #83BD75;
-    font-size: 16px;
+    background: none;
+    font-size: 14px;
     cursor: pointer;
-    border:10px;
-    border-radius: 5px;
-    font-weight: 400;
-    color:white;
-    text-decoration: none;
-    margin-left: 10px;
-  }
-  
+    color: white;
+    border-radius: 70px;
+}
+
+.goToCheckoutButtons{
+  border: none;
+  padding: 5px 10px;
+  background: #83BD75;
+  font-size: 16px;
+  cursor: pointer;
+  border:10px;
+  border-radius: 5px;
+  font-weight: 400;
+  color:white;
+  text-decoration: none;
+  margin-left: 10px;
+}
