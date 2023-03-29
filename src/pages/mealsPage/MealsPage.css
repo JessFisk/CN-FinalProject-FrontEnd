@@ -1,4 +1,14 @@
+#welcomeText{
+    background-color: rgb(5, 163, 5, 0.50);
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
 
+.recipePageContainer{
+    background-color: rgb(252, 252, 252) !important;
+    margin-top: -50px;;
+}
 #mealPageTitle{
     text-align: center;
     margin: 50px 0;

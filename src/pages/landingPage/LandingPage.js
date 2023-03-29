@@ -25,7 +25,7 @@ const images = [
 const LandingPage = (props) => {
     // const [user, setUser] = useState();
     return (
-        <Container fluid>
+        <Container fluid className="landingPageContainer">
             <Row>
                 <Col className="mainRow">
                     <div className="mainBannerImg" style={{ backgroundImage: `url(${BannerImg})` }}>
