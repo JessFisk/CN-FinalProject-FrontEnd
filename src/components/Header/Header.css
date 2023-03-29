@@ -8,11 +8,8 @@ body {
     border-bottom: #023020 5px solid;
   }
   
-  .Logo {
+  #Logo {
     width: 70px;
-    margin-left: 80px;
-    height: 100px;
-    
   }
   
   .name {
@@ -20,12 +17,8 @@ body {
   }
   
   .links {
-    color: #E9EFC0;
-    padding: 30px;
-    padding-right: 80px;
-    text-align: center;
+    color: #E9EFC0!important;
     text-decoration: none;
-    height: 110px;
   }
 
   .routesContainer :hover{
@@ -45,8 +38,6 @@ body {
   }
 
   #logoutBtn{
-    position: absolute;
-    left: 74%;
     background-color: #B4E197;
     color:#023020;
     border:#023020 1px solid;
@@ -57,7 +48,7 @@ body {
   }
 
   #loginBtn{
-    margin-right: 100px;
+    /* margin-right: 100px; */
     background-color: #B4E197;
     color:#023020;
     border:#023020 1px solid;
