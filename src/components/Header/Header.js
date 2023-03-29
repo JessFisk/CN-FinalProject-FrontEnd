@@ -24,7 +24,7 @@ const Header = (props) => {
                 <Link id="profile" className="links" to="/profile">Profile</Link>
                 <Link id="about" className="links" to="/about">About</Link>
                 <Link id="contact" className="links" to="/contact">Contact</Link>
-                <Link id="community" className="links" to="">Community</Link>
+                <Link id="community" className="links" to="/community">Community</Link>
             </Navbar.Brand>
             <Nav>
                 <Dropdown id="cart">
@@ -36,7 +36,8 @@ const Header = (props) => {
                     (only showing the Welcome:username and logout) */}
                     {
                         !props.user && (
-                            <Button href="/login">
+                            <Button href="/login"
+                            id="loginBtn">
                                 Login
                             </Button>
                         )
@@ -49,11 +50,11 @@ const Header = (props) => {
                                     <div key={index} className="checkoutRecipeBoxes">
 
                                         <div className="basketItemNames">
-                                            <p>{recipe.name}</p>
+                                            <p>{recipe.title}</p>
                                         </div>
 
                                         <div className="basketItemPrice">
-                                            <p>{recipe.price}</p>
+                                            <p>£{recipe.pricePerServing.toFixed(2/10)/10}</p>
                                         </div>
 
                                         <button className="basketRemoveButton">
@@ -62,7 +63,7 @@ const Header = (props) => {
                                     </div>
                                 </Dropdown.Item>)
                         })}
-                        <Link className="goToCheckoutButtons" to={"/Checkout"}>Go to check out</Link>
+                        <Link className="goToCheckoutButtons" to={"/checkout"}>Go to check out</Link>
                     </Dropdown.Menu>
                 </Dropdown>
 
@@ -71,13 +72,14 @@ const Header = (props) => {
                 {
                     props.user && (
                         <>
-                            <Navbar.Text>
-                                Welcome: {props.user.username}
+                            <Navbar.Text className="welcomeText">
+                                Welcome, {props.user.username}!
                             </Navbar.Text>
 
                             {/* Added Logout button with onClick event that also navigates 
                             back to the landing page on logout need to add use navigate at top too.*/}
                             <Button
+                            id="logoutBtn"
                                 onClick={
                                     () => {
                                         logout(props.setUser);

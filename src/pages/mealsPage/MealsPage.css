@@ -1,4 +1,7 @@
-
+.recipePageContainer{
+    background-color: rgb(252, 252, 252) !important;
+    margin-top: -50px;;
+}
 #mealPageTitle{
     text-align: center;
     margin: 50px 0;

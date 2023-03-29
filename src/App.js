@@ -20,11 +20,12 @@ import { authCheck } from "./utils/user";
 import LoginContainer from "./components/registerOrLogContainer/LoginContainer";
 import LogOut from "./components/registerOrLogContainer/logout/Logout";
 import Register from "./components/registerOrLogContainer/register/Register";
+import CommunityPage from "./pages/CommunityPage/CommunityPage";
 
 
 
 const App = () => {
-  const [basket, setBasket] = useState([])
+  const [basket, setBasket] = useState([]);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -56,23 +57,20 @@ const App = () => {
               <Header basket={basket} updateBasket={setBasket} user={user} setUser= {setUser}> </Header>
               <Routes>
                 <Route path="/" element={<LandingPage user={user} />}></Route>
-                <Route path="/checkout" element={<CheckoutPage user={user} />}></Route>
+                <Route path="/checkout" element={<CheckoutPage basket={basket} updateBasket={setBasket} user={user} setUser= {setUser} />}></Route>
                 <Route path="/contact" element={<ContactPage />}></Route>
                 <Route path="/about" element={<AboutPage />}></Route>
-                <Route path="/profile" element={<ProfilePage user={user} />}></Route>
-                <Route path="/meals" element={<MealsPage user={user} />}></Route>
-                <Route path="/login" element={<LoginContainer setUser={setUser}/>}></Route>
-                <Route path="/register" element={<Register />}></Route>
+                <Route path="/profile" element={<ProfilePage user={user} setUser = {setUser} />}></Route>
+                <Route path="/meals" element={<MealsPage user={user} basket={basket} updateBasket={setBasket}/>}></Route>
+                <Route path="/login" element={<LoginContainer setUser={setUser} />}></Route>
+                <Route path="/register" element={<Register setUser={setUser} />}></Route>
                 <Route path="/logout" element={<LogOut />}></Route>
-
-
-
+                <Route path="/community" element={<CommunityPage user={user} />}></Route>
               </Routes>
             </Col>
           </Row>
         </Container>
       </BrowserRouter>
-
     </>
   );
 

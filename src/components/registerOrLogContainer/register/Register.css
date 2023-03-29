@@ -1,33 +1,38 @@
 #registerHeader{
-    color: black;
-    padding-left: 55px;
-    padding-bottom: 50px;
-    padding-top: 140px;
+  color: black;
+  padding-left: 55px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-left: 83px;
 }
 
 .registerContainer {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    display: block;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-25%, -60%);
-    margin-top: 100px;
+  width: 30%;
+  position: fixed;
+  top: 30%;
+  left: 43%;
+  transform: translate(-25%, -60%);
+  margin-top: 190px;
+  border: 1px transparent;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px 2px #023020;
+  background-color: #B4E197;
 }
 
-#inputBox{
+#registerInput{
+  text-align: center;
+  margin-left: 120px;
 }
 
   #registerBtn{
-    margin-left: 55px;
+    margin-left: 140px;
   }
 
   #register{
     color: black;
     padding-right: 25px;
     padding-top: 15px;
+    margin-left: 70px;
   }
 
 

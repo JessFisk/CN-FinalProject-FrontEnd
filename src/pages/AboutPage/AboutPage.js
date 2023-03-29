@@ -18,8 +18,8 @@ const AboutPage = (props) => {
 
             <div className='aboutApp' style={{backgroundImage: `url(${AboutBackground})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover"
-                
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed"
                 }}>
                 <img id='logo' src={Logo} alt="Nom logo"></img>
                 <h3>About Nom</h3>
