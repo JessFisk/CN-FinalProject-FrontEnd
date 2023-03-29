@@ -26,6 +26,7 @@ if (!props.user){
   return(
     props.user &&
     <div className="usersInfo-wrap">
+      <h2 id="communityHeader">Check out other chefs on their Nom journey ...</h2>
         {users ? users.map((users, index) =>
         <p className="usersInfo" key={index}>
           <img src="https://t3.ftcdn.net/jpg/01/77/54/02/360_F_177540231_SkxuDjyo8ECrPumqf0aeMbean2Ai1aOK.jpg" 

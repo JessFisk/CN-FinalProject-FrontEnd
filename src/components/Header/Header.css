@@ -16,10 +16,16 @@ body {
     margin-left: 120px;
   }
   
-  .links {
-    color: #E9EFC0!important;
-
+  #links {
+    color: #E9EFC0 !important;
     text-decoration: none;
+    padding: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+  }
+
+  #links :hover {
+    color: white;
   }
 
   .routesContainer :hover{
@@ -28,8 +34,8 @@ body {
 
 
   #cart{
-    display: flex;
-    /* margin-left: -370px; */
+    margin-left: -250px;
+    margin-right: 50px;
   }
   
   #pageheader {

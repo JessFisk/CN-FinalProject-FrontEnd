@@ -1,5 +1,34 @@
 #checkoutContainer{
+    text-align: center;
+    /* max-height: 500px; */
+    width: 45%;
+    margin-top: 40px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px transparent;
+    border-radius: 50px;
+    padding: 50px;
+    box-shadow: 0px 0px 20px 2px #023020;
+    background-color: #B4E197;
 }
 
 .titles{
+    background-color: #B4E197;
+    
+}
+
+#FaIcon{
+    margin: 15px;
+}
+
+.checkoutBoxes{
+    border: 2px solid rgb(8, 8, 79);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color:white;
+    white-space: nowrap;
+    overflow: hidden;
 }

@@ -23,21 +23,21 @@ const Header = (props) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link className="nav-link links" to="/meals">Recipes</Link>
-                        <Link className="nav-link links" to="/profile">Profile</Link>
-                        <Link className="nav-link links" to="/about">About</Link>
-                        <Link className="nav-link links" to="/contact">Contact</Link>
-                        <Link className="nav-link links" to="/community">Community</Link>
+                        <Link className="nav-link links" id="links" to="/meals">Recipes</Link>
+                        <Link className="nav-link links" id="links" to="/profile">Profile</Link>
+                        <Link className="nav-link links" id="links" to="/about">About</Link>
+                        <Link className="nav-link links" id="links" to="/contact">Contact</Link>
+                        <Link className="nav-link links" id="links" to="/community">Community</Link>
                     </Nav>
                     <Nav>
-                        <Dropdown>
+                        <Dropdown id="cart">
                             <Dropdown.Toggle variant="success">
                                 <FaShoppingCart color="white" fontSize="25px" />
                                 <Badge bg="none">{props.basket.length}</Badge>
                             </Dropdown.Toggle>
 
 
-                            <Dropdown.Menu style={{ minWidth: 370 }}>
+                            <Dropdown.Menu id="dropdownMenu" style={{ minWidth: 300, maxWidth: 320 }}>
                                 {props.basket.map((recipe, index) => {
                                     return (
                                         <Dropdown.Item>
@@ -49,12 +49,8 @@ const Header = (props) => {
                                                 </div>
 
                                                 <div className="basketItemPrice">
-                                                    <p>£{recipe.pricePerServing.toFixed(2 / 10) / 10}</p>
+                                                    <p>£{recipe.pricePerServing.toFixed(2 / 10) / 10}0</p>
                                                 </div>
-
-                                                <button className="basketRemoveButton">
-                                                    &times;
-                                                </button>
                                             </div>
                                         </Dropdown.Item>)
                                 })}

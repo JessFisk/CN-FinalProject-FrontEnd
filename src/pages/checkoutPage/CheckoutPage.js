@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaCcVisa, FaCcPaypal } from "react-icons/fa"
+import "./CheckoutPage.css"
 
 
 const Checkout = (props) => {
@@ -24,7 +25,7 @@ const Checkout = (props) => {
                         return (
                             // <Dropdown.Item >{cat.name} - {cat.price}</Dropdown.Item>)})}
 
-                            <div key={index} className="checkoutRecipeBoxes">
+                            <div key={index} className="checkoutBoxes">
                                 <div className="basketItemNames">
                                     <p>{recipe.title}</p>
                                 </div>
@@ -40,8 +41,8 @@ const Checkout = (props) => {
 
 
                 <div className='payimages'>
-                    <FaCcVisa fontSize="25px" id="FaIcon"/>
-                    <FaCcPaypal fontSize="25px" id="FaIcon"/>
+                    <FaCcVisa fontSize="55px" id="FaIcon"/>
+                    <FaCcPaypal fontSize="55px" id="FaIcon"/>
                 <div>
                     <h2 id='delivery'>Delivery Address:</h2>
                 </div>
