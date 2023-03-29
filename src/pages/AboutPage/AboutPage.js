@@ -5,7 +5,7 @@ import RegisterExample from "../../components/images/RegisterExample.png"
 import RecipeInstruct from "../../components/images/RecipeInstruct.png"
 import Checkout from "../../components/images/Checkout.png"
 import Catherine from "../../components/images/Catherine.jpg"
-import Adam2 from "../../components/images/Adam2.png"
+import Adam2 from "../../components/images/Adam2.jpg"
 import Gaz from "../../components/images/Gaz.jpeg"
 
 const AboutPage = (props) => {
