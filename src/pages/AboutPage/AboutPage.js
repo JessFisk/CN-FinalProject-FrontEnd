@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./AboutPage.css";
-import AboutBackground from "../../components/images/AboutBackground.jpg"
-import Logo from "../../components/images/WhiteNomLogo.png";
+import Logo from "../../components/images/GreenNomLogo.png";
 import RegisterExample from "../../components/images/RegisterExample.png"
 import RecipeInstruct from "../../components/images/RecipeInstruct.png"
 import Checkout from "../../components/images/Checkout.png"
@@ -11,27 +10,20 @@ import Adam1 from "../../components/images/Adam1.png"
 const AboutPage = (props) => {
     return (
         <div className='aboutContainer'>
-            <div className='header'>
-                <h1> About Us </h1>
-                
-            </div>
-
-            <div className='aboutApp' style={{backgroundImage: `url(${AboutBackground})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundAttachment: "fixed"
-                }}>
-                <img id='logo' src={Logo} alt="Nom logo"></img>
-                <h3>About Nom</h3>
-                <p className='aboutText'>Nom is both a recipe information app, and a packaged meal delivery service. <br></br>
-                    We provide an extensive list of delicious recipes to suit whatever mood you're in.
-                    You can save these recipes to your profile to cook yourself...OR! <br></br>
+            <div className="headerContainer">
+            <div className='aboutApp'>
+                <img id='nomLogo' src={Logo} alt="Nom logo"></img>
+                <h3 className="aboutApp">About Nom</h3>
+                <p className='aboutText'>Nom is both a recipe information app, and a packaged meal delivery service.<br/>
+                    We provide an extensive list of delicious recipes to suit whatever mood you're in.<br/>
+                    You can save these recipes to your profile to cook yourself...OR!<br/>
                     You could purchase them as part of a package and have them delivered to you!
                 </p>
             </div>
+            </div>
 
             <div className='instruct-wrap'>
-                <h3> How to use the App</h3>
+                <h3 className="howTo"> How to use the App</h3>
                 <div className='steps-wrapper'>
                 <div className='stepOne'>
                     <p className='steps'> Step 1</p>
@@ -65,7 +57,7 @@ const AboutPage = (props) => {
             </div>
 
             <div className='Team-Wrapper'>
-                <h3 id='teamHeader'>Meet your Maître d'Apps</h3>
+                <h3 className='teamHeader'>Meet your Maître d'Apps</h3>
                 <div className='TeamProfile-wrap'>
                 <div className='cathrine-wrap'>
                     <h4 className='name'>Catherine</h4>

@@ -39,6 +39,7 @@ const MealsPage = (props) => {
         props.user && (
             <div className="recipePageContainer">
                 <h1 id="mealPageTitle"> Choose your Recipes </h1>
+                <h2 id="welcomeText">Welcome, {props.user.username}!</h2>
                 <Row>
                     <Col className="shoppingRow">
                         <div className="shoppingBannerImg" style={{ backgroundImage: `url(${shoppingPageImg}),url(${shoppingPageImgtwo})` }}>

@@ -22,7 +22,7 @@ body {
   .links {
     color: #E9EFC0;
     padding: 30px;
-    padding-right: 80px;
+    padding-right: 70px;
     text-align: center;
     text-decoration: none;
     height: 110px;
@@ -35,6 +35,7 @@ body {
 
   #cart{
     display: flex;
+    /* margin-left: -370px; */
   }
   
   #pageheader {
@@ -45,8 +46,8 @@ body {
   }
 
   #logoutBtn{
-    position: absolute;
-    left: 74%;
+    margin-right: 100px;
+    margin-left: 50px;
     background-color: #B4E197;
     color:#023020;
     border:#023020 1px solid;
@@ -58,6 +59,7 @@ body {
 
   #loginBtn{
     margin-right: 100px;
+    margin-left: 50px;
     background-color: #B4E197;
     color:#023020;
     border:#023020 1px solid;
@@ -67,7 +69,38 @@ body {
     background-color: #83BD75;
   }
 
+  #dropdownContainer{
+  }
 
+  .checkoutRecipeBoxes{
+    border: 2px solid rgb(8, 8, 79);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 2px;
+    background-color:white;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .basketItemNames{
+    text-align: center;
+    color: rgb(8, 8, 79);
+  }
+  
+  .basketItemPrice{
+    text-align: center;
+    color: rgb(8, 8, 79);
+    margin-bottom: -20px;
+  }
+  
+  .basketRemoveButton{
+      border: none;
+      background: none;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+      border-radius: 70px;
+  }
 
   .goToCheckoutButtons{
     border: none;
@@ -82,9 +115,4 @@ body {
     text-decoration: none;
     margin-left: 10px;
   }
-
-  .welcomeText {
-    margin: 0 10px;
-  }
-
   
