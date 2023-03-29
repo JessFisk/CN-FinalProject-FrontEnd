@@ -30,14 +30,14 @@ const Header = (props) => {
                         <Link className="nav-link links" to="/community">Community</Link>
                     </Nav>
                     <Nav>
-                        <Dropdown>
+                        <Dropdown id="cart">
                             <Dropdown.Toggle variant="success">
                                 <FaShoppingCart color="white" fontSize="25px" />
                                 <Badge bg="none">{props.basket.length}</Badge>
                             </Dropdown.Toggle>
 
 
-                            <Dropdown.Menu style={{ minWidth: 370 }}>
+                            <Dropdown.Menu id="dropdownMenu" style={{ minWidth: 300, maxWidth: 320 }}>
                                 {props.basket.map((recipe, index) => {
                                     return (
                                         <Dropdown.Item>
@@ -49,12 +49,8 @@ const Header = (props) => {
                                                 </div>
 
                                                 <div className="basketItemPrice">
-                                                    <p>£{recipe.pricePerServing.toFixed(2 / 10) / 10}</p>
+                                                    <p>£{recipe.pricePerServing.toFixed(2 / 10) / 10}0</p>
                                                 </div>
-
-                                                <button className="basketRemoveButton">
-                                                    &times;
-                                                </button>
                                             </div>
                                         </Dropdown.Item>)
                                 })}
@@ -80,7 +76,6 @@ const Header = (props) => {
                                     <Navbar.Text className="welcomeText">
                                         Welcome, {props.user.username}!
                                     </Navbar.Text>
-
                                     {/* Added Logout button with onClick event that also navigates 
 
                             back to the landing page on logout need to add use navigate at top too.*/}

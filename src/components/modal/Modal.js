@@ -27,7 +27,7 @@ function RecipeModal(props) {
           </ul>
         </p>
         <p> {recipe.instructions}</p>
-        <p>£{recipe.pricePerServing.toFixed(2/10)/10}</p>
+        <p>£{recipe.pricePerServing.toFixed(2/10)/10}0</p>
       </Modal.Body>
       <Modal.Footer> 
         <div className='modalFooterBox'>
