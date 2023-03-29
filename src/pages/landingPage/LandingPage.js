@@ -1,14 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RegisterOrLogContainer from '../../components/registerOrLogContainer/RegisterOrLogContainer';
-import { useState } from 'react'
-import Logo from "../../components/images/WhiteNomLogo.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./LandingPage.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import BannerImg from "./pexels-fauxels-3184191.jpg";
 import recipes from "./recipes.json";
 import { RecipeCard } from '../../components/recipes/Recipes';
@@ -23,7 +19,6 @@ const images = [
 ]
 
 const LandingPage = (props) => {
-    // const [user, setUser] = useState();
     return (
         <Container fluid className="landingPageContainer">
             <Row>
@@ -130,25 +125,6 @@ const LandingPage = (props) => {
                 </Col>
             </Row>
         </Container>
-
-
-
-        // <div className="LandingPage-Wrapper">
-        //     <div className='logowrap'>
-        //       <img id="logo" src={Logo} alt="nom white logo"></img>
-        //     {/* <h1 id='Title'> NOM... </h1> */}
-        //     <RegisterOrLogContainer user={user} setUser={setUser}/>
-        //     </div>
-        //     <div className="carousel">
-        //     <Carousel useKeyboardArrows={true}>
-        //     {images.map((URL, index) => (
-        //         <div key={index} className="slide">
-        //             <img alt="sample_file" src={URL} key={index} />                      
-        //         </div>
-        //         ))}
-        //         </Carousel>
-        //     </div>
-        //     </div>
     )
 };
 

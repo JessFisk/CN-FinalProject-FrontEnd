@@ -1,21 +1,22 @@
 import "./ProfilePage.css";
 import React, { useState } from "react";
-import { authCheck, deleteUser, updateUsername } from "../../utils/user";
+import { deleteUser, updateUsername } from "../../utils/user";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../utils";
 import { Navigate } from "react-router-dom";
 
 
 const ProfilePage = (props) => {
+    const navigate = useNavigate();
+    const [newUsername, setNewUsername] = useState();
+    const [oldUsername, setOldUsername] = useState();
+
 
     if (!props.user) {
         return <Navigate to="/login" replace />
     }
     
-    const navigate = useNavigate();
-    const [newUsername, setNewUsername] = useState();
-    const [oldUsername, setOldUsername] = useState();
-
+    
     return (
         props.user &&
         <div id="profileContainer">
@@ -55,12 +56,9 @@ const ProfilePage = (props) => {
                 }
             > DELETE ACCOUNT</button >
         </div>
-        // </div>
     )
 
 };
-
-
 
 export default ProfilePage;
 
