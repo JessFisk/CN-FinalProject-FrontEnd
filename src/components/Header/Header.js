@@ -77,10 +77,7 @@ const Header = (props) => {
                         {
                             props.user && (
                                 <>
-                                    <Navbar.Text className="welcomeText">
-                                        Welcome, {props.user.username}!
-                                    </Navbar.Text>
-
+                                    
                                     {/* Added Logout button with onClick event that also navigates 
 
                             back to the landing page on logout need to add use navigate at top too.*/}
