@@ -5,7 +5,8 @@ import RegisterExample from "../../components/images/RegisterExample.png"
 import RecipeInstruct from "../../components/images/RecipeInstruct.png"
 import Checkout from "../../components/images/Checkout.png"
 import Catherine from "../../components/images/Catherine.jpg"
-import Adam1 from "../../components/images/Adam1.png"
+import Adam2 from "../../components/images/Adam2.png"
+import Gaz from "../../components/images/Gaz.jpeg"
 
 const AboutPage = (props) => {
     return (
@@ -72,7 +73,7 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Adam-wrap'>
                     <h4 className='name'>Adam</h4>
-                    <img className='TeamPics' src={Adam1} alt="Adam's face"></img>
+                    <img className='TeamPics' src={Adam2} alt="Adam's face"></img>
                     <p className='teamText'>Adam worked on: <br/>
                     Writing the front end login, register and sign-in functions <br/>
                     Adding cookies functions to front end <br/>
@@ -91,7 +92,7 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Gaz-wrap'>
                     <h4 className='name'>Gaz</h4>
-                    <p>Image will go here when I've got a pretty one</p>
+                    <img className='TeamPics' src={Gaz} alt="Adam's face"></img>
                     <p className='teamText'>Gaz worked on: <br/>
                     Designing the presentation <br/>
                     Giving the presentation?<br/>
