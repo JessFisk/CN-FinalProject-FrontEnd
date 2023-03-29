@@ -23,11 +23,11 @@ const Header = (props) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link className="nav-link links" id="links" to="/meals">Recipes</Link>
-                        <Link className="nav-link links" id="links" to="/profile">Profile</Link>
-                        <Link className="nav-link links" id="links" to="/about">About</Link>
-                        <Link className="nav-link links" id="links" to="/contact">Contact</Link>
-                        <Link className="nav-link links" id="links" to="/community">Community</Link>
+                        <Link className="nav-link links" to="/meals">Recipes</Link>
+                        <Link className="nav-link links" to="/profile">Profile</Link>
+                        <Link className="nav-link links" to="/about">About</Link>
+                        <Link className="nav-link links" to="/contact">Contact</Link>
+                        <Link className="nav-link links" to="/community">Community</Link>
                     </Nav>
                     <Nav>
                         <Dropdown id="cart">
@@ -73,7 +73,9 @@ const Header = (props) => {
                         {
                             props.user && (
                                 <>
-                                    
+                                    <Navbar.Text className="welcomeText">
+                                        Welcome, {props.user.username}!
+                                    </Navbar.Text>
                                     {/* Added Logout button with onClick event that also navigates 
 
                             back to the landing page on logout need to add use navigate at top too.*/}
