@@ -5,7 +5,7 @@ import RegisterExample from "../../components/images/RegisterExample.png"
 import RecipeInstruct from "../../components/images/RecipeInstruct.png"
 import Checkout from "../../components/images/Checkout.png"
 import Catherine from "../../components/images/Catherine.jpg"
-import Adam2 from "../../components/images/Adam2.png"
+import Adam2 from "../../components/images/Adam2.jpg"
 import Gaz from "../../components/images/Gaz.jpeg"
 
 const AboutPage = (props) => {
@@ -83,7 +83,6 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Chris-wrap'>
                     <h4 className='name'>Chris</h4>
-                    <p>Image will go here when I've got a pretty one</p>
                     <p className='teamText'>Chris worked on: <br/>
                     Setting up the back-end<br/>
                     Tailoring the error handling for more specific responses<br/>
@@ -101,7 +100,6 @@ const AboutPage = (props) => {
                 </div>
                 <div className='Jess-wrap'>
                     <h4 className='name'>Jess</h4>
-                    <p>Image will go where when I've got a pretty one</p>
                     <p className='teamText'>Jess worked on: <br/>
                     Conceptualisation of the whole app<br/>
                     Finding and implementing the API<br/>
