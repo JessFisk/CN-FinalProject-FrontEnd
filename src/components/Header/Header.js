@@ -36,11 +36,13 @@ const Header = (props) => {
                                 <Badge bg="none">{props.basket.length}</Badge>
                             </Dropdown.Toggle>
 
+
                             <Dropdown.Menu style={{ minWidth: 370 }}>
                                 {props.basket.map((recipe, index) => {
                                     return (
                                         <Dropdown.Item>
                                             <div key={index} className="checkoutRecipeBoxes">
+
 
                                                 <div className="basketItemNames">
                                                     <p>{recipe.title}</p>
@@ -80,6 +82,7 @@ const Header = (props) => {
                                     </Navbar.Text>
 
                                     {/* Added Logout button with onClick event that also navigates 
+
                             back to the landing page on logout need to add use navigate at top too.*/}
                                     <Button
                                         id="logoutBtn"
