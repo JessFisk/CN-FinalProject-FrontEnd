@@ -62,10 +62,15 @@ const Header = (props) => {
                      (only showing the Welcome:username and logout) */}
                         {
                             !props.user && (
-                                <Button href="/login"
-                                    id="loginBtn">
+                                <Button id="loginBtn" 
+                                onClick={
+                                    () => {
+                                        navigate("/login")
+                                    }
+                                }>
                                     Login
                                 </Button>
+                                 
                             )
                         }
                         {/* Creating a true/false boolean- meaning if its true this element will be rendered if its false it will do nothing.
