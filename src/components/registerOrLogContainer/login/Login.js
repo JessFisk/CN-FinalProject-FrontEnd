@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { login } from "../../../utils/user";
 import "./Login.css"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = ({user, setUser}) => { //other setStates will be needed but don't know what yet
     const [username, setUsername] = useState();
@@ -46,7 +46,7 @@ return (
             <br/>
             <button type="submit" id="loginButton">Login</button>
         </form> 
-        <p id="login">Not yet registered with us? <a href="/register">Click here.</a></p>
+        <p id="login">Not yet registered with us? <Link to="/register">Click here.</Link></p>
     </div>
     );
 };
